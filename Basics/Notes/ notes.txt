@@ -1,0 +1,50 @@
+REACTJS
+
+Install node && npm
+
+install brew/linuxbrew/homebrew:
+          mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+mkdir Project-1
+cd Project-1
+create-react-app hello-world
+cd hello-world
+npm start
+
+sudo npm install -g create-react-app
+
+to start your app, go to your folder/dir through terminal, and run:
+         npm start  OR yarn start
+         
+NOTE:  In case the created react-app, fails to open;
+    FIRST : Make sure you've closed the previous node connection before opening a new one on the same port.
+            Just try to close the earlier connection first, and then open the new one!
+            
+            THEN>>>
+    
+       1. Run >>>> "killall node" then "npm start" OR >>>> sudo npm start
+       2. Remove the node_modules directory and reinstalling again using npm install
+          then npm start OR sudo npm start
+       3. Run npm install and then npm update
+       4. Try npm start as superuser: sudo npm start
+       5. Using sudo while running npx create-react-app app-name
+       6. ALSO: Delete node module files
+                Change in pakage.json
+                "react-scripts": "3.4.1" to "react-scripts": "1.1.1"
+                than use npm install
+       7. after npm create-react-app "my-app"
+          cd "my-app"
+          run >>> npm install react-scripts@2.1.8
+          npm start
+       8. Try run this command in your terminal:
+           echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+           
+           
+hello world
+JSX Syntax
+components-basics
+constructors
+components and states
+Rendering
+Props
+props validation
+project3- props-state
