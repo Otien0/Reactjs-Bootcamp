@@ -37,14 +37,36 @@ NOTE:  In case the created react-app, fails to open;
           npm start
        8. Try run this command in your terminal:
            echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+A. INDEX  
+
+1. REACT BASICS:         
            
-           
-hello world
-JSX Syntax
-components-basics
-constructors
-components and states
-Rendering
-Props
-props validation
-project3- props-state
+   Project-1 hello world
+   JSX Syntax
+   Project-2: components-basics
+   constructors
+   components and states
+   Rendering
+   Props
+   props validation/types
+   project3- props-state
+             Link to prop errors/deprecation:  https://reactjs.org/docs/typechecking-with-proptypes.html
+             https://reactjs.org/blog/2017/09/26/react-v16.0.html
+             https://reactjs.org/docs/react-component.html#render
+   Components-API
+   Components lIFE CYCLE:
+             Methods Include:
+             
+                    componentDidMount
+                    componentWillMount
+                    componentWillReceiveProps
+                    shouldComponentUpdate
+                    componentWillUpdate
+                    componentDidUpdate
+                    componentWillUnmount
+                    
+                    
+   Project-4: Components Life Cycle
+   Forms in Reactjs
+   React Router
