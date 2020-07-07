@@ -2,10 +2,34 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// function App() {
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <p>
+//           Edit <code>src/App.js</code> and save to reload.
+//         </p>
+//         <a
+//           className="App-link"
+//           href="https://reactjs.org"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//         >
+//           Learn React
+//         </a>
+//       </header>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
 class App extends Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
       headerText: "Welcome to React!",
       contentText: "This App deals with the Forms in React"
@@ -41,7 +65,7 @@ class Header extends Component {
 class Content extends Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
       myInputValue: "My Input"
     };
@@ -50,7 +74,7 @@ class Content extends Component {
   }
   myInputChanged(e) {
     var itemValue = e.target.value;
-    this.setState({myInputValue: itemValue});
+    this.setState({ myInputValue: itemValue });
   }
   render() {
     return (
@@ -58,7 +82,7 @@ class Content extends Component {
         <h1>Forms in React!</h1>
         <p>This App deals with the Forms in React</p>
         <MyInputComponent inputValue={this.state.myInputValue}
-        myInputChanged={this.myInputChanged}/>
+          myInputChanged={this.myInputChanged} />
         <h4>{this.state.myInputValue}</h4>
         <EssayComponent />
         <FlavorForm />
@@ -73,7 +97,7 @@ class MyInputComponent extends Component {
   render() {
     return (
       <div>
-        <input value={this.props.inputValue} onChange={this.props.myInputChanged}/> 
+        <input value={this.props.inputValue} onChange={this.props.myInputChanged} />
       </div>
     );
   }
@@ -82,7 +106,7 @@ class MyInputComponent extends Component {
 class EssayComponent extends Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
       value: 'Once upon a time...'
     };
@@ -90,16 +114,16 @@ class EssayComponent extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(e) {
-    this.setState({value: e.target.value});
+    this.setState({ value: e.target.value });
   }
-  handleSubmit(e){
+  handleSubmit(e) {
     alert(this.state.value);
     e.preventDefault();
   }
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <textarea value={this.state.value} onChange={this.handleChange}/> 
+        <textarea value={this.state.value} onChange={this.handleChange} />
         <h4>{this.state.value}</h4>
         <button type="submit">Submit</button>
       </form>
@@ -110,7 +134,7 @@ class EssayComponent extends Component {
 class FlavorForm extends Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
       value: 'grapefruit'
     };
@@ -118,10 +142,10 @@ class FlavorForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
   handleChange(e) {
-    this.setState({value: e.target.value});
+    this.setState({ value: e.target.value });
   }
-  handleSubmit(e){
-    alert("The Flavor you selected is : "+this.state.value.toUpperCase());
+  handleSubmit(e) {
+    alert("The Flavor you selected is : " + this.state.value.toUpperCase());
     e.preventDefault();
   }
   render() {
@@ -145,7 +169,7 @@ class FlavorForm extends Component {
 class Reservation extends Component {
   constructor(props) {
     super(props);
-  
+
     this.state = {
       isGoing: true,
       numberOfGuests: 2
@@ -164,28 +188,28 @@ class Reservation extends Component {
     });
   }
   handleSubmit(e) {
-    alert('I will be going: '+this.state.isGoing+" , I will bring "+ this.state.numberOfGuests + "guests");
+    alert('I will be going: ' + this.state.isGoing + " , I will bring " + this.state.numberOfGuests + "guests");
     e.preventDefault();
   }
   render() {
-    return(
+    return (
       <form onSubmit={this.handleSubmit}>
         <label>
-          Are you going for the party? : 
-          <input 
-          name="isGoing"
-          type="checkbox" 
-          checked={this.state.isGoing}
-          onChange={this.handleInputChage} />
+          Are you going for the party? :
+          <input
+            name="isGoing"
+            type="checkbox"
+            checked={this.state.isGoing}
+            onChange={this.handleInputChage} />
         </label>
-        <br/>
+        <br />
         <label>
-          How many guests will you bring? : 
-          <input 
-          name="numberOfGuests"
-          type="number" 
-          value={this.state.numberOfGuests}
-          onChange={this.handleInputChage} />
+          How many guests will you bring? :
+          <input
+            name="numberOfGuests"
+            type="number"
+            value={this.state.numberOfGuests}
+            onChange={this.handleInputChage} />
         </label>
         <input type="submit" value="Submit" />
       </form>
@@ -196,12 +220,3 @@ class Reservation extends Component {
 
 
 export default App;
-
-
-
-
-
-
-
-
-
