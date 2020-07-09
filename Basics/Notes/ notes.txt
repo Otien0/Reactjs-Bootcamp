@@ -8,7 +8,7 @@ mkdir Project-1
 cd Project-1
 create-react-app hello-world
 cd hello-world
-npm start
+npm start OR sudo npm start
 
 sudo npm install -g create-react-app
 
@@ -39,23 +39,24 @@ NOTE:  In case the created react-app, fails to open;
            echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
 
 A. INDEX  
+   common React problems:  https://jscomplete.com/learn/react-beyond-basics/react-cfp
 
 1. REACT BASICS:         
            
-   Project-1 hello world
-   JSX Syntax
-   Project-2: components-basics
-   constructors
-   components and states
-   Rendering
-   Props
-   props validation/types
-   project3- props-state
+   a)Project-1 hello world
+   b)JSX Syntax
+   c)Project-2: components-basics
+   d)constructors
+   e)components and states
+   f)Rendering
+   g)Props
+   h)props validation/types
+   i)project3- props-state
              Link to prop errors/deprecation:  https://reactjs.org/docs/typechecking-with-proptypes.html
              https://reactjs.org/blog/2017/09/26/react-v16.0.html
              https://reactjs.org/docs/react-component.html#render
-   Components-API
-   Components lIFE CYCLE:
+   j)Components-API
+   k)Components lIFE CYCLE:
              Methods Include:
              
                     componentDidMount
@@ -67,6 +68,22 @@ A. INDEX
                     componentWillUnmount
                     
                     
-   Project-4: Components Life Cycle
-   Forms in Reactjs
-   React Router
+   l)Project-4: Components Life Cycle
+   m)Forms in Reactjs
+   n)React Router
+        Github Link: https://github.com/ReactTraining/react-router
+        Doccumentation: https://reactrouter.com/
+        React-Dom for Web Tutorial : https://reactrouter.com/web/guides/quick-start
+        
+        Installing React Router globall:
+                                          npm install --save react-router
+        Installing React Dom for web-app:
+                  First, Follow these basic steps like before;
+                         mkdir React-Router
+                         cd React-Router
+                         create-react-app my-app
+                         cd my-app, then install react-router by;
+                                                                 npm install --save react-router
+                                                                 npm install react-router-dom
+                         npm start OR sudo npm start
+                         
