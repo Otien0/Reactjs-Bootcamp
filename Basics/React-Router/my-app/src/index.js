@@ -7,19 +7,21 @@ import Contact from './Contact';
 import Blog from './Blog';
 import BlogSingle from './BlogSingle';
 import './index.css';
-import { Router, Route, browserHistory } from 'react-router-dom'
+import { Router, Route, BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <Route path="/home" component={Home} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/blog" component={Blog}>
-        <Route path="/blog/:postId" component={BlogSingle} />
-      </Route>
-    </Route>
-  </Router>
+  <BrowserRouter>
+    <div>
+      <Route path='/' component={App} />
+      <Route path='/home' component={Home} />
+      <Route path='/about' component={About} />
+      <Route path='/contact' component={Contact} />
+      <Route path='/blog' component={Blog} />
+      <div>
+        <Route path='/blog/:postId' component={BlogSingle} />
+      </div>
+    </div>
+  </BrowserRouter>
   ,
   document.getElementById('root')
 );
