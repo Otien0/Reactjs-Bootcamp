@@ -91,7 +91,7 @@ A. INDEX
          
     o) Project-5:
                         Creating react App manually using Terminal
-              comands;
+              comands:
                         mkdir Project-5/basic-app  cd basic-app;
                         npm init -y, ls 
                         npm i -S react
@@ -106,3 +106,16 @@ A. INDEX
                         touch index.html
                         mkdir src
                         touch src/app.js
+                        
+             comands:  still on basic-app dir, type;
+                       sudo npm install -g webpack
+                       webpack -w  OR try to follow this;  https://ccoenraets.github.io/es6-tutorial-data/babel-webpack/
+                       
+             NOTE:     In the basic-app directory, create a build directory to host the compiled version
+                       of the application.  The build process will fail if you don’t create the build directory     
+                       Then; on terminal, type 
+                       npm run webpack
+                            
+             Link to webpack cli;   https://github.com/webpack/webpack-cli
+             Add this script-tag to the body;  <script type="text/javascript" src="build/bundle.js"></script>
+             then on basic-app dir' open the index.html on the browser.
