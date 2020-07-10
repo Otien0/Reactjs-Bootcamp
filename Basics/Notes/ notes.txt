@@ -88,4 +88,21 @@ A. INDEX
                          npm start OR sudo npm start
          Link to Version 4 of REACT-Router;  
          https://github.com/ReactTraining/react-router/blob/25776d4dc89b8fb2f575884749766355992116b5/packages/react-router/docs/guides/migrating.md#nesting-routes
-                         
+         
+    o) Project-5:
+                        Creating react App manually using Terminal
+              comands;
+                        mkdir Project-5/basic-app  cd basic-app;
+                        npm init -y, ls 
+                        npm i -S react
+                        npm i -S react-dom
+                        npm i -D webpack
+                        npm i -D babel-core
+                        npm i -D babel-loader >>These two convert the rect code into ES6 version to be understood by Browser
+                        npm i -D babel-preset-react
+                        npm i -D babel-preset-es2015
+                        
+              files:    touch webpack.config.js
+                        touch index.html
+                        mkdir src
+                        touch src/app.js
