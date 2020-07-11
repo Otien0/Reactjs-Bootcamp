@@ -1,0 +1,121 @@
+REACTJS
+
+Install node && npm
+
+install brew/linuxbrew/homebrew:
+          mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+mkdir Project-1
+cd Project-1
+create-react-app hello-world
+cd hello-world
+npm start OR sudo npm start
+
+sudo npm install -g create-react-app
+
+to start your app, go to your folder/dir through terminal, and run:
+         npm start  OR yarn start
+         
+NOTE:  In case the created react-app, fails to open;
+    FIRST : Make sure you've closed the previous node connection before opening a new one on the same port.
+            Just try to close the earlier connection first, and then open the new one!
+            
+            THEN>>>
+    
+       1. Run >>>> "killall node" then "npm start" OR >>>> sudo npm start
+       2. Remove the node_modules directory and reinstalling again using npm install
+          then npm start OR sudo npm start
+       3. Run npm install and then npm update
+       4. Try npm start as superuser: sudo npm start
+       5. Using sudo while running npx create-react-app app-name
+       6. ALSO: Delete node module files
+                Change in pakage.json
+                "react-scripts": "3.4.1" to "react-scripts": "1.1.1"
+                than use npm install
+       7. after npm create-react-app "my-app"
+          cd "my-app"
+          run >>> npm install react-scripts@2.1.8
+          npm start
+       8. Try run this command in your terminal:
+           echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+A. INDEX  
+   common React problems:  https://jscomplete.com/learn/react-beyond-basics/react-cfp
+
+1. REACT BASICS:         
+           
+   a)Project-1 hello world
+   b)JSX Syntax
+   c)Project-2: components-basics
+   d)constructors
+   e)components and states
+   f)Rendering
+   g)Props
+   h)props validation/types
+   i)project3- props-state
+             Link to prop errors/deprecation:  https://reactjs.org/docs/typechecking-with-proptypes.html
+             https://reactjs.org/blog/2017/09/26/react-v16.0.html
+             https://reactjs.org/docs/react-component.html#render
+   j)Components-API
+   k)Components lIFE CYCLE:
+             Methods Include:
+             
+                    componentDidMount
+                    componentWillMount
+                    componentWillReceiveProps
+                    shouldComponentUpdate
+                    componentWillUpdate
+                    componentDidUpdate
+                    componentWillUnmount
+                    
+                    
+   l)Project-4: Components Life Cycle
+   m)Forms in Reactjs
+   n)React Router
+        Github Link: https://github.com/ReactTraining/react-router
+        Doccumentation: https://reactrouter.com/
+        React-Dom for Web Tutorial : https://reactrouter.com/web/guides/quick-start
+        
+        Installing React Router globall:
+                                          npm install --save react-router
+        Installing React Dom for web-app:
+                  First, Follow these basic steps like before;
+                         mkdir React-Router
+                         cd React-Router
+                         create-react-app my-app
+                         cd my-app, then install react-router by;
+                                                                 npm install --save react-router
+                                                                 npm install react-router-dom
+                         npm start OR sudo npm start
+         Link to Version 4 of REACT-Router;  
+         https://github.com/ReactTraining/react-router/blob/25776d4dc89b8fb2f575884749766355992116b5/packages/react-router/docs/guides/migrating.md#nesting-routes
+         
+    o) Project-5:
+                        Creating react App manually using Terminal
+              comands:
+                        mkdir Project-5/basic-app  cd basic-app;
+                        npm init -y, ls 
+                        npm i -S react
+                        npm i -S react-dom
+                        npm i -D webpack
+                        npm i -D babel-core
+                        npm i -D babel-loader >>These two convert the rect code into ES6 version to be understood by Browser
+                        npm i -D babel-preset-react
+                        npm i -D babel-preset-es2015
+                        
+              files:    touch webpack.config.js
+                        touch index.html
+                        mkdir src
+                        touch src/app.js
+                        
+             comands:  still on basic-app dir, type;
+                       sudo npm install -g webpack
+                       webpack -w  OR try to follow this;  https://ccoenraets.github.io/es6-tutorial-data/babel-webpack/
+                       
+             NOTE:     In the basic-app directory, create a build directory to host the compiled version
+                       of the application.  The build process will fail if you don’t create the build directory     
+                       Then; on terminal, type 
+                       npm run webpack
+                            
+             Link to webpack cli;   https://github.com/webpack/webpack-cli
+             Add this script-tag to the body;  <script type="text/javascript" src="build/bundle.js"></script>
+             then on basic-app dir' open the index.html on the browser

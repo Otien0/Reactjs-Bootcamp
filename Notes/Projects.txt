@@ -1,0 +1,20 @@
+1. First Blog App;
+
+        mkdir Blog App
+        cd Blog App
+        create-react-app blog
+        cd blog
+        npm start OR sudo npm start
+        
+        Go to; https://startbootstrap.com/themes/
+             Select the "Clean Blog" Template; https://startbootstrap.com/previews/clean-blog/
+             download it on your pc
+        
+        Extract the template, copy everything to your blog folder under public directory, except "index.html" file
+        On the index.html of original template;
+            copy the bootstrap/css fonts to your index.html file header,
+            copy the jQuery section of the body to and paste it too in the same current index.html file.
+            Now, copy the body upto the footer section and paste it into the src/app.js inside the "<div> tag </div>"
+            Do this while regarding the JSX Syntax
+            Change the "class" keyword to "className" on the div tags
+             
