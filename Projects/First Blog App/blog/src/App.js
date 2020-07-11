@@ -11,7 +11,7 @@ class App extends Component {
             <a className="navbar-brand" href="index.html">Start Bootstrap</a>
             <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               Menu
-          <i className="fas fa-bars"></i>
+              <i className="fas fa-bars"></i>
             </button>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ml-auto">
@@ -59,7 +59,7 @@ class App extends Component {
                 </h3>
                 </a>
                 <p className="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
+                <a href="/#">Start Bootstrap</a>
                 on September 24, 2019</p>
               </div>
               <hr />
@@ -70,7 +70,7 @@ class App extends Component {
                 </h2>
                 </a>
                 <p className="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
+                <a href="/#">Start Bootstrap</a>
                 on September 18, 2019</p>
               </div>
               <hr />
@@ -84,7 +84,7 @@ class App extends Component {
                 </h3>
                 </a>
                 <p className="post-meta">Posted by
-               <a href="#">Start Bootstrap</a>
+               <a href="/#">Start Bootstrap</a>
                on August 24, 2019</p>
               </div>
               <hr />
@@ -94,16 +94,16 @@ class App extends Component {
                     Failure is not an option
                 </h2>
                   <h3 className="post-subtitle">
-                    Many say exploration is part of our destiny, but itâ€™s actually our duty to future generations.
+                    Many say exploration is part of our destiny, but it’s actually our duty to future generations.
                 </h3>
                 </a>
                 <p className="post-meta">Posted by
-                <a href="#">Start Bootstrap</a>
+                <a href="/#">Start Bootstrap</a>
                 on July 8, 2019</p>
               </div>
               <hr />
               <div className="clearfix">
-                <a className="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+                <a className="btn btn-primary float-right" href="/#">Older Posts &rarr;</a>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ class App extends Component {
               <div className="col-lg-8 col-md-10 mx-auto">
                 <ul className="list-inline text-center">
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a href="/#">
                       <span className="fa-stack fa-lg">
                         <i className="fas fa-circle fa-stack-2x"></i>
                         <i className="fab fa-twitter fa-stack-1x fa-inverse"></i>
@@ -125,7 +125,7 @@ class App extends Component {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a href="/#">
                       <span className="fa-stack fa-lg">
                         <i className="fas fa-circle fa-stack-2x"></i>
                         <i className="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
@@ -133,7 +133,7 @@ class App extends Component {
                     </a>
                   </li>
                   <li className="list-inline-item">
-                    <a href="#">
+                    <a href="/#">
                       <span className="fa-stack fa-lg">
                         <i className="fas fa-circle fa-stack-2x"></i>
                         <i className="fab fa-github fa-stack-1x fa-inverse"></i>
