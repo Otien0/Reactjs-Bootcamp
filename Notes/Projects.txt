@@ -1,4 +1,4 @@
-1. First Blog App;
+1. First Blog App:
 
         mkdir Blog App
         cd Blog App
@@ -17,4 +17,19 @@
             Now, copy the body upto the footer section and paste it into the src/app.js inside the "<div> tag </div>"
             Do this while regarding the JSX Syntax
             Change the "class" keyword to "className" on the div tags
+       Link for changing correct/valid "Anchor-tag" in  Reactjs;
+                                https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+            change the index.html, css path to "css/clean-blog.css" in order to add style for the header bg image
+            Under src, create a new folder named "Navbar.js" , cut the navbar section from App.js,
+            and paste it inside the later navbar component
+            Repeat the same steps for Header, Container and footer too
+            But on the Container component, try to inject the "post-preview" class, inside it and place it on its own component
+            
+            
+2. Timer App:
+        mkdir Timer App
+        cd Timer App
+        create-react-app timer
+        cd timer
+        npm start OR sudo npm start
              
