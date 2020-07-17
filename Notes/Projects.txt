@@ -29,7 +29,36 @@
 2. Timer App:
         mkdir Timer App
         cd Timer App
-        create-react-app timer
-        cd timer
+        create-react-app stop-watch
+        cd stop-watch
         npm start OR sudo npm start
+        
+        On src, create a new Component file "Timer.js"
+        edit the App.css file for the <span> tag for the Timer
+        Check on this site-documentation for Dates in JavaScript:
+                                        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+        This app tests basically on Reacts;
+                                        Componets methods
+                                        props validation
+                                        constructor, and
+                                        time-interval.
+                                        
+3. Course-Sales App:
+        mkdir Course-Sales App
+        cd Course-Sales App
+        create-react-app course-purchase
+        cd course-purchase
+        npm start OR sudo npm start
+        
+        Create a new Component, "Coursesales.js"
+        Read on ES6 Documentation of "map function"
+        Inside Coursesales.js, create another component "Course"  (should be moved to its own component)
+        
+        This is just a simple react app that;
+                       Display the list of available courses,
+                       Users can select number of courses as it diplays their total amount,
+                       To de-select a course, you double click it or reselect it again and the
+                       total amount too will be displayed.                
+                                        
+                                        
              
