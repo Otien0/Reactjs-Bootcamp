@@ -35,14 +35,14 @@ class Coursesales extends Component {
 }
 
 class Course extends Component {
-    
-    clicker(){
+
+    clicker() {
         var active = !this.state.active;
-        this.setState({active: active});
+        this.setState({ active: active });
         this.props.sumPrice(active ? this.props.price : -this.props.price);
     }
 
-    constructor(props){
+    constructor(props) {
         super(props);
 
         this.state = {
@@ -54,7 +54,7 @@ class Course extends Component {
     render() {
         return (
             <div>
-                <p onClick={this.clicker}> {this.props.name} <strong>{this.props.price}</strong></p>
+                <p className={this.state.active ? 'active' : ''} onClick={this.clicker}> {this.props.name} <strong>{this.props.price}</strong></p>
             </div>
         );
     }
