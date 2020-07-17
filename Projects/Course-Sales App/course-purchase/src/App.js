@@ -4,13 +4,13 @@ import './App.css';
 import Coursesales from './Coursesales';
 
 class App extends Component {
-  render(){
+  render() {
 
     var courses = [
-      { name: 'Complete Full-Stack Java-Spring Course', price: '$199' },
-      { name: 'Complete Front-end Developer Course', price: '$299'},
-      { name: 'Complete Pentesting Course', price: '$160' },
-      { name: 'Complete Full-Stack Python-Django Course', price: '$255' }
+      { name: 'Complete Full-Stack Java-Spring Course', price: 199 },
+      { name: 'Complete Front-end Developer Course', price: 299 },
+      { name: 'Complete Pentesting Course', price: 160 },
+      { name: 'Complete Full-Stack Python-Django Course', price: 255 }
     ];
 
     return (
@@ -27,11 +27,11 @@ class App extends Component {
             Learn React
         </a>
         </header>
-        <Coursesales items={courses}/>
+        <Coursesales items={courses} />
       </div>
     );
   }
-  
+
 }
 
 export default App;
