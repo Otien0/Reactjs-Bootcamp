@@ -58,7 +58,25 @@
                        Display the list of available courses,
                        Users can select number of courses as it diplays their total amount,
                        To de-select a course, you double click it or reselect it again and the
-                       total amount too will be displayed.                
-                                        
-                                        
+                       total amount too will be displayed.    
+                       
+
+4. Random-Number Guessing Game:
+        mkdir Random-Game
+        cd Random-Game
+        create-react-app random-number
+        cd random-number
+        npm start OR sudo npm start          
+                                     
+        This is just a random number guessing game which prompts the user to choose one among the numbers
+        placed on the screen.
+        Components;
+                  Quiz.js, Quiz_Options.js
+                  
+        NPM Library/package used; "classnames" - Link to install: https://www.npmjs.com/package/classnames
+        
+        CSS-Animation Link:  https://animate.style/
+        Github Documentation Link:   https://github.com/animate-css/animate.css?files=1
+               Use the CDN version and add it to the "index.html" file
+        
              
