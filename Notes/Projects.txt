@@ -73,10 +73,23 @@
         Components;
                   Quiz.js, Quiz_Options.js
                   
-        NPM Library/package used; "classnames" - Link to install: https://www.npmjs.com/package/classnames
+        npm Library/package used; "classnames" - Link to install: https://www.npmjs.com/package/classnames
         
         CSS-Animation Link:  https://animate.style/
         Github Documentation Link:   https://github.com/animate-css/animate.css?files=1
-               Use the CDN version and add it to the "index.html" file
+               Use the CDN version and add it to the "index.html" file.
+               
+5. Easy ABC Alphabet Game:
         
-             
+        mkdir ABC Alphabet Game
+        cd ABC Alphabet Game
+        create-react-app alphabet-game
+        cd alphabet-game
+        npm start OR sudo npm start
+        
+        This is an easy-abc alphabet game that displays images of the 26 alphabet letters,
+        together with their corresponding sounds. The sounds and images(from: "https://imgur.com/") are downloaded online,
+         and encripted in the /src alphabets.json file.
+        
+        Components; EasyABC.js
+        npm Library/package used; "classnames" - Link to install: https://www.npmjs.com/package/classnames
