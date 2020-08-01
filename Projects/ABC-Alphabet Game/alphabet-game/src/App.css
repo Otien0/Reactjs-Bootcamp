@@ -48,7 +48,8 @@
 
 .App-header {
   background-color: #222;
-  height: 60px;
+  min-height: 10vh;
+  /* height: 60px; */
   padding: 10px;
   color: white;
 }
@@ -265,7 +266,12 @@ input:checked + .slider:before {
 
 /* Footer */
 footer {
-  font-size: 2rem;
+  font-size: 1rem;
+  min-height: 10vh;
+  padding: 10px;
+  color: white;
+  background-color: #222;
+  /* background-color: #282c34; */
 }
 
 /* Heart */
@@ -289,6 +295,9 @@ footer {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
   
+  header {
+    margin-bottom: .8rem;
+  }
   .game {
     margin: 5px;
     padding: 5px;
