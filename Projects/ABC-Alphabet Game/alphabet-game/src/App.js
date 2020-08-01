@@ -1,17 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import EasyABC from './EasyABC';
+import Footer from './Footer';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h2>Hello! Welcome to Easy ABC.. Alphabet-Game, with React.js</h2>
-
-        <EasyABC />
+        <h1>Hello! Welcome to ReactJS Alphabet-Game </h1>
       </header>
+      <EasyABC />
+      <Footer />
     </div>
   );
 }
