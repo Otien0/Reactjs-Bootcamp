@@ -93,3 +93,28 @@
         
         Components; EasyABC.js
         npm Library/package used; "classnames" - Link to install: https://www.npmjs.com/package/classnames
+        
+        
+6. My Resume App:
+        mkdir React Resume
+        cd React Resume
+        create-react-app resume
+        cd resume
+        npm start OR sudo npm start
+        
+        This resume is made by importing it from an existing online template.
+        Download the resume online from this link:
+        https://themes.3rdwavemedia.com/bootstrap-templates/resume/orbit-free-resume-cv-bootstrap-theme-for-developers/
+        
+        Once downloaded, copy the assets folder and paste it inside the public folder of your resume app.
+        copy the head$$body section of the "assets/index.html", and replace it to the "public/index.html"  head$$body file.
+        Again, copy the body section from "div class-wrapper", to the footer, leave out the footer while paste the entire-
+         content to src/App.js component, while removing the {div class App} section. Remove the html comments too.
+        Fetch data from a JSON file, by creating a "resume.json" file inside src folder. Import it inside App.js component.
+        Fill in your "key":"value" details, in an Array structure, inside the .json file.
+        
+        Components:
+                   Experience.js, Project.js, Skill.js, Education.js, Language.js
+        
+        
+        
