@@ -1,0 +1,132 @@
+{
+	"name": "Mourice Otieno Oduor",
+	"email": "otienomaurice364@gmail.com",
+	"phone": "+254 704 489 364",
+	"image": "https://i.imgur.com/uxJkYCV.png?1",
+	"website": "Website",
+	"websiteURL": "https://dev-mourice.herokuapp.com/",
+	"portfolio": "Portfolio-Site",
+	"portfolioURL": "https://mourice-oduor.github.io/portfolio-site/",
+	"linkedin": "Linkedin",
+	"linkedinURL": "https://www.linkedin.com/in/mourice-otieno-oduor-58188b166/",
+	"github": "mourice-oduor",
+	"githubURL": "https://github.com/mourice-oduor",
+	"twitter": "@Morys0",
+	"twitterURL": "https://twitter.com/Morys0",
+	"experiences" : [
+		{
+			"title" : "Freelance Software Developer",
+			"period": "2019 - Present",
+			"company": "Self-Employed",
+			"companyURL": "https://dev-mourice.herokuapp.com/",
+			"details": "I design and develop quality softwares, while considering the basic principles, strategies and standards required for a complete software."
+		},
+		{
+			"title" : "Freelance Web Developer",
+			"period": "2019 - Present",
+			"company": "Self-Employed",
+			"companyURL": "https://dev-mourice.herokuapp.com/",
+			"details": "I specializes in customized website design, development and maintenance to match the specific requirements of my clients. My eye-catching and striking websites are professionally designed for ease of navigation."
+		}
+	],
+	"projects": [
+		{
+			"name":"Blog-Project(Django)",
+			"url": "https://blogsite-django.herokuapp.com/",
+			"detail": "A simple blog clone-site built using Django"
+		},
+		{
+			"name":"React-Blog",
+			"url": "https://simplereactblog.herokuapp.com/",
+			"detail": "Simple ReactJS blog site theme built through Start-Bootstrap Template."
+		},
+		{
+			"name":"Yelp-Camp",
+			"url": "https://github.com/mourice-oduor/Node.js/tree/master/YelpCamp_4",
+			"detail": "This is a campground rating app, where users can create their own campgrounds, view and comment on others' campgrounds. This is a small project in RESTful routing with Nodejs. It uses the following technologies : Node.js, Express.js, Passport.js, jQuery and MongoDB."
+		},
+		{
+			"name":"Simple-Social Media Site(Django)",
+			"url": "https://simplesocial-django.herokuapp.com/",
+			"detail": "A simple social media network clone-site project built with Django, with some similar features such as other social network platforms."
+		},
+		{
+			"name":"Horizon-Detector(Open CV)",
+			"url": "https://github.com/mourice-oduor/Sky-Ground_Horizon_Detector",
+			"detail": "A Python Script that implements the technique of Sky Region Detection in multiple input_images, using an application of a computer vision-based horizon detector(OpenCV)."
+		}
+	],
+	"skills": [
+		{
+			"name": "Python & Django",
+			"percent": "95%"
+		},
+		{
+			"name": "Javascript & jQuery",
+			"percent": "90%"
+		},
+		{
+			"name": "ReactJs",
+			"percent": "80%"
+		},
+		{
+			"name": "HTML5 & CSS",
+			"percent": "90%"
+		},
+		{
+			"name": "MERN Stack",
+			"percent": "80%"
+		},
+		{
+			"name": "Graphic Design",
+			"percent": "55%"
+		}
+	],
+	"education": [
+		{
+			"degree": "BSc in Mathematics and Computer Science",
+			"category": "Applied Mathematics Option",
+			"university": "Taita Taveta University",
+			"award": "Awarded grade B",
+			"location": "Coastal Province-Kenya",
+			"county": "Taita Taveta County",
+			"period": "2016 - 2020"
+		},
+		{
+			"grade": "Kenya Certificate of Secondary Education",
+			"school": "Mbaga Mixed Secondary School",
+			"award": "Awarded grade B(plain)",
+			"location":"Nyanza Province-Kenya",
+			"county": "Siaya County",
+			"period": "2012 - 2015"
+		}
+	],
+	"languages": [
+		{
+			"name":"English",
+			"details": "Native"
+		},
+		{
+			"name":"Swahili",
+			"details": "Professional"
+		},
+		{
+			"name":"Luo",
+			"details": "Professional"
+		}
+	],
+	"interests": [
+		"Hiking",
+		"Swimming",
+		"Coding",
+		"Movies",
+		"Dancing"
+		
+	]
+}
+
+
+
+
+
+
