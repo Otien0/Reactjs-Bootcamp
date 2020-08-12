@@ -19,6 +19,7 @@
             Change the "class" keyword to "className" on the div tags
        Link for changing correct/valid "Anchor-tag" in  Reactjs;
                                 https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+                  instead, use <a href="/#" > on the anchor tag to avoid problems.
             change the index.html, css path to "css/clean-blog.css" in order to add style for the header bg image
             Under src, create a new folder named "Navbar.js" , cut the navbar section from App.js,
             and paste it inside the later navbar component
@@ -115,6 +116,40 @@
         
         Components:
                    Experience.js, Project.js, Skill.js, Education.js, Language.js
+                   
+                   
+7. Food Recipes App:
+        mkdir Recipe
+        cd Recipe
+        create-react-app food-recipe
+        cd food-recipe
+        npm start OR sudo npm start OR yarn start
         
+        
+        On the same dir/path through terminal, install react-bootstrap by;
+                                                        npm i --save react-bootstrap
+        Confirm if it is installed in the package.json file.
+        
+        Link to react-bootstrap from npm:
+                                         https://www.npmjs.com/package/react-bootstrap
+                                         
+        Go to getbootstrap.com, and copy the CDN links to your /public/index.html file
+        Again go to getbootstrap.com through the link above and pick a suitable Navbar for your site:
+                                         https://getbootstrap.com/docs/4.5/examples/#navbars
+                                         https://getbootstrap.com/docs/4.5/examples/navbar-fixed/
+        Right-click to view page source, copy the nav section/tag, and paste it into App.js file.
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+Link to Debugging npm:
+                     https://stackoverflow.com/questions/47180722/create-react-app-failing-to-create-a-new-react-app-in-windows-10
         
         
