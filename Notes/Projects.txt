@@ -139,6 +139,43 @@
                                          https://getbootstrap.com/docs/4.5/examples/navbar-fixed/
         Right-click to view page source, copy the nav section/tag, and paste it into App.js file.
         
+        Install react-router by:
+                                 npm install --save react-router
+                                 npm install --save react-router-dom
+                                           # or
+                                 yarn add react-router
+        Link to github Documentation:
+                                     https://github.com/ReactTraining/react-router
+        >>>>> Doccumentation: https://reactrouter.com/
+              React-Dom for Web Tutorial : https://reactrouter.com/web/guides/quick-start
+        Link to Version 4 of REACT-Router;  
+         https://github.com/ReactTraining/react-router/blob/25776d4dc89b8fb2f575884749766355992116b5/packages/react-router/docs/guides/migrating.md#nesting-routes.
+        
+        
+              Installing React Router globall:
+                                              npm install --save react-router 
+                                                     AND
+                                              npm install --save react-router-dom       
+        Confirm on package.json if it is installed.
+        On your src/index.js file, add this to the imports bottom part:
+                                                           import { Router, Route, BrowserRouter } from 'react-router-dom';
+                                                           
+                                                           then:
+                                                           
+                                                           ReactDOM.render(
+                                                             <BrowserRouter>
+                                                               <div>
+                                                                  <Route path='/' component={App} />
+                                                                  <Route path='/home' component={Home} />
+                                                                  <Route path='/submit' component={Submit} />
+                                                               </div>
+                                                            </BrowserRouter>,
+                                                            document.getElementById('root')
+                                                            );
+       
+
+                                                           
+                                                           
         
         
         
