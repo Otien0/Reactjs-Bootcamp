@@ -12,10 +12,10 @@ function App() {
       <div className="collapse navbar-collapse" id="navbarCollapse">
         <ul className="navbar-nav mr-auto">
           <li className="nav-item active">
-            <NavLink className="nav-link" to="/#">Home <span className="sr-only">(current)</span></NavLink>
+            <NavLink className="nav-link" to="/">Home <span className="sr-only">(current)</span></NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-link" to="/#">Submit recipe</NavLink>
+            <NavLink className="nav-link" to="/Submit">Submit recipe</NavLink>
           </li>
         </ul>
       </div>
