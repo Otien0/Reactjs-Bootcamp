@@ -37,7 +37,14 @@
   }
 }
 
+.nav-item {
+  margin-right: .5rem;
+}
 .activeNav {
   color: #555 !important;
   background-color: #e7e7e7 !important;
+}
+
+.home, .submit, .row {
+  padding-top: 8%;
 }
