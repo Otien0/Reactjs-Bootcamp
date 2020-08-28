@@ -8,17 +8,25 @@ class Submit extends Component {
                     <h2>Submit</h2>
                     <form>
                         <div className="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                            <small id="emailHelp" className="form-text text-muted">We'll never share your email with anyone else.</small>
+                            <label for="name">Name</label>
+                            <input type="text" className="form-control" id="name" placeholder="Enter the name of the recipe" aria-describedby="nameHelp" />
                         </div>
 
                         <div className="form-group">
-                            <label for="exampleInputPassword1">Password</label>
-                            <input type="password" className="form-control" id="exampleInputPassword1" />
+                            <label for="description">Description</label>
+                            <textarea className="form-control" id="description" placeholder="Enter a brief description" aria-describedby="descriptionlHelp" />
                         </div>
 
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <div className="form-inline form-group">
+                            <label for="quantity">Quantity</label>
+                            <input type="text" className="form-control" id="quantity" placeholder="Quantity" aria-describedby="quantitylHelp" />
+
+                            <label for="ingredient">Ingredient</label>
+                            <input type="text" className="form-control" id="ingredient" placeholder="Ingredient" aria-describedby="ingredientHelp" />
+
+                            <button type="submit" className="btn btn-primary">Add</button>
+                        </div>
+
                     </form>
                 </div>
             </div>
