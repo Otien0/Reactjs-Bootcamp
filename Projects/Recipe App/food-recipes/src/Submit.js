@@ -13,6 +13,7 @@ class Submit extends Component {
 
     submitRecipe() {
         console.log('Submit Recipie');
+        console.log(this.name.value, this.description.value);
     }
 
     render() {
@@ -23,7 +24,12 @@ class Submit extends Component {
                     <form>
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
-                            <input type="text" className="form-control" id="name" placeholder="Enter the name of the recipe" aria-describedby="nameHelp" />
+                            <input type="text"
+                                ref={(input) => { this.name = input; }}
+                                className="form-control"
+                                id="name"
+                                placeholder="Enter the name of the recipe"
+                                aria-describedby="nameHelp" />
                         </div>
 
                         <div className="form-group">
