@@ -172,11 +172,10 @@
                                                             </BrowserRouter>,
                                                             document.getElementById('root')
                                                             );
-       
-
-                                                           
-                                                           
-        
+        Components;
+                   Home.js, Submit.js, Ingredients.js
+        On App.js, replace all the <a>-tags with NavLink, and href with "to"
+        cut all your header code on App.js and paste it to index.js
         
         
         
