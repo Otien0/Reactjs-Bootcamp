@@ -39,7 +39,7 @@ class Submit extends Component {
 
                         <Ingredients />
 
-                        <button type="button" onClick={this.submitRecipe} className="btn btn-default">Submit</button>
+                        <button type="button" onClick={this.submitRecipe} className="btn btn-dark">Submit</button>
 
                     </form>
                 </div>
