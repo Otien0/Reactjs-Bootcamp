@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 class IngredientList extends Component {
 
-	displayIngredients(){
+	displayIngredients() {
 		let resultsArray = [];
 
+		// eslint-disable-next-line array-callback-return
 		this.props.recipie.ingredients.map((item, i) => {
 			resultsArray.push(<li key={i}>{item.quantity} - {item.ingredient}</li>);
 		});
