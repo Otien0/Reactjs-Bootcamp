@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Ingredients from './Ingredients';
+import IngredientList from './IngredientList';
 
 class Submit extends Component {
 
@@ -7,13 +8,35 @@ class Submit extends Component {
         super(props);
 
 
-        this.state = {};
+        this.state = {
+            newRecipie: {
+                name: "New Recipie",
+                description: "Description",
+                ingredients: []
+            }
+        };
         this.submitRecipe = this.submitRecipe.bind(this);
     }
 
     submitRecipe() {
         console.log('Submit Recipie');
         console.log(this.name.value, this.description.value);
+        let newRecipie = this.state.newRecipie;
+
+        newRecipie.name = this.name.value;
+        newRecipie.description = this.description.value;
+
+        //Update newRecipie
+        this.setState({ newRecipie });
+        console.log(newRecipie);
+    }
+
+    addIngredient(quantity, ingredient) {
+        console.log("Add Ingredients in Submit js", quantity, ingredient);
+        let newRecipie = this.state.newRecipie;
+        newRecipie.ingredients.push({ quantity: quantity, ingredient: ingredient });
+        this.setState({ newRecipie: newRecipie });
+        console.log(newRecipie);
     }
 
     render() {
@@ -37,7 +60,9 @@ class Submit extends Component {
                             <textarea className="form-control" id="description" placeholder="Enter a brief description" aria-describedby="descriptionlHelp" />
                         </div>
 
-                        <Ingredients />
+                        <IngredientList recipie={this.state.newRecipie} />
+
+                        <Ingredients addIngredient={(quantity, ingredient) => { this.addIngredient(quantity, ingredient) }} />
 
                         <button type="button" onClick={this.submitRecipe} className="btn btn-dark">Submit</button>
 
