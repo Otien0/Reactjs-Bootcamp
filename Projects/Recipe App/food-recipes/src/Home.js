@@ -15,6 +15,7 @@ class Home extends Component {
     displayRecipies() {
         let resultsArray = [];
 
+        // eslint-disable-next-line array-callback-return
         this.state.recipies.map((recipie, i) => {
             resultsArray.push(
                 <div className="col-sm-6 col-md-4">
