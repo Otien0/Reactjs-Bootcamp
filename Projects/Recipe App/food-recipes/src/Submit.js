@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Ingredients from './Ingredients';
 import IngredientList from './IngredientList';
+// import { browserHistory } from 'react-router';
+import { withRouter } from "react-router";
 
 class Submit extends Component {
 
@@ -9,6 +11,7 @@ class Submit extends Component {
 
 
         this.state = {
+            recipies: JSON.parse(localStorage.getItem('recipies')) || [],
             newRecipie: {
                 name: "New Recipie",
                 description: "Description",
@@ -28,8 +31,17 @@ class Submit extends Component {
 
         //Update newRecipie
         this.setState({ newRecipie });
-        console.log(newRecipie);
+
+        let recipies = this.state.recipies;
+        recipies.push(newRecipie);
+
+        this.setState({ recipies });
+        localStorage.setItem('recipies', JSON.stringify(recipies));
+        console.log(recipies);
+        this.props.history.push('/');
     }
+
+    // const HomeWitRouter = withRouter(Home);
 
     addIngredient(quantity, ingredient) {
         console.log("Add Ingredients in Submit js", quantity, ingredient);
