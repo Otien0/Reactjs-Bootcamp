@@ -173,11 +173,14 @@
                                                             document.getElementById('root')
                                                             );
         Components;
-                   Home.js, Submit.js, Ingredients.js, IngredientList.js.
+                   Home.js, Submit.js, Ingredients.js, IngredientList.js
         On App.js, replace all the <a>-tags with NavLink, and href with "to"
         cut all your header code on App.js and paste it to index.js
         
-        
+        LOCAL STORAGE- JS
+              Links: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+                     https://www.w3schools.com/jsref/prop_win_localstorage.asp
+                     https://www.taniarascia.com/how-to-use-local-storage-with-javascript/     
         
         
         
