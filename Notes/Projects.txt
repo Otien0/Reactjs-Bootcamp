@@ -178,7 +178,8 @@
         cut all your header code on App.js and paste it to index.js
         
         LOCAL STORAGE- JS
-              Links: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+              Links: https://developers.google.com/web/tools/chrome-devtools/storage/localstorage?utm_source=devtools
+                     https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
                      https://www.w3schools.com/jsref/prop_win_localstorage.asp
                      https://www.taniarascia.com/how-to-use-local-storage-with-javascript/     
         
