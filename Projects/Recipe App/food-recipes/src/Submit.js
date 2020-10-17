@@ -1,8 +1,17 @@
 import React, { Component } from 'react';
+
+import Dropzone from 'react-dropzone';
+import request from 'superagent';
+
 import Ingredients from './Ingredients';
 import IngredientList from './IngredientList';
 // import { browserHistory } from 'react-router';
-import { withRouter } from "react-router";
+// import { withRouter } from "react-router";
+// import Footer from './Footer';
+
+const CLOUDINARY_UPLOAD_PRESET = 'ceotsrdw';
+const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/https-dev-mourice-herokuapp-com/image/upload';
+
 
 class Submit extends Component {
 
@@ -16,9 +25,37 @@ class Submit extends Component {
                 name: "New Recipie",
                 description: "Description",
                 ingredients: []
-            }
+            },
+            uploadedFileCloudinaryUrl: ''
         };
         this.submitRecipe = this.submitRecipe.bind(this);
+        this.onImageDrop = this.onImageDrop.bind(this);
+    }
+
+    onImageDrop(files) {
+        this.setState({
+            uploadedFile: files[0]
+        });
+
+        this.handleImageUpload(files[0]);
+    }
+
+    handleImageUpload(file) {
+        let upload = request.post(CLOUDINARY_UPLOAD_URL)
+            .field('upload_preset', CLOUDINARY_UPLOAD_PRESET)
+            .field('file', file);
+
+        upload.end((err, response) => {
+            if (err) {
+                console.error(err);
+            }
+
+            if (response.body.secure_url !== '') {
+                this.setState({
+                    uploadedFileCloudinaryUrl: response.body.secure_url
+                });
+            }
+        });
     }
 
     submitRecipe() {
@@ -28,6 +65,7 @@ class Submit extends Component {
 
         newRecipie.name = this.name.value;
         // newRecipie.description = this.description.value;
+        newRecipie.image = this.state.uploadedFileCloudinaryUrl;
 
         //Update newRecipie
         this.setState({ newRecipie });
@@ -56,6 +94,7 @@ class Submit extends Component {
             <div className="row">
                 <div className="col-xs-12 col-sm-12">
                     <h2>Submit</h2>
+
                     <form>
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
@@ -65,6 +104,42 @@ class Submit extends Component {
                                 id="name"
                                 placeholder="Enter the name of the recipe"
                                 aria-describedby="nameHelp" />
+                        </div>
+
+                        <Dropzone
+                            onDrop={this.onImageDrop}
+                            accept="image/*"
+                            multiple={false}>
+                            {({ getRootProps, getInputProps }) => {
+                                return (
+                                    <div{...getRootProps()}>
+                                        <h5>Add Image</h5>
+                                        <input {...getInputProps()} />
+                                        {
+                                            <p><i>Try dropping some files here, or click to select files to upload.</i></p>
+                                        }
+                                    </div>
+                                )
+                            }}
+                        </Dropzone>
+
+                        {/* <Dropzone onDrop={acceptedFiles => console.log(acceptedFiles)}>
+                            {({ getRootProps, getInputProps }) => (
+                                <section>
+                                    <div {...getRootProps()}>
+                                        <input {...getInputProps()} />
+                                        <p><i>Drag 'n' drop some files here, or click to select files</i></p>
+                                    </div>
+                                </section>
+                            )}
+                        </Dropzone> */}
+
+                        <div>
+                            {this.state.uploadedFileCloudinaryUrl === '' ? null :
+                                <div>
+                                    <p>{this.state.uploadedFile.name}</p>
+                                    <img alt={this.state.uploadedFile.name} src={this.state.uploadedFileCloudinaryUrl} />
+                                </div>}
                         </div>
 
                         <div className="form-group">
@@ -81,6 +156,7 @@ class Submit extends Component {
                     </form>
                 </div>
 
+                {/* <Footer /> */}
             </div>
         );
     }
