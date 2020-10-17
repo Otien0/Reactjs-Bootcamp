@@ -119,6 +119,8 @@
                    
                    
 7. Food Recipes App:
+           //https://www.allrecipes.com/
+          // https://www.allrecipes.com/recipes/83/everyday-cooking/convenience-cooking/
         mkdir Recipe
         cd Recipe
         create-react-app food-recipe
@@ -183,6 +185,20 @@
                      https://www.w3schools.com/jsref/prop_win_localstorage.asp
                      https://www.taniarascia.com/how-to-use-local-storage-with-javascript/     
         
+        Uploading Images- With Cloudinary;
+              How to: https://css-tricks.com/image-upload-manipulation-react/
+              
+              The three tools I used include:
+
+              *react-dropzone*- to accept an image from a user
+                                 Link: https://github.com/react-dropzone/react-dropzone
+                                 
+              *superagent*- to transfer the uploaded image
+                                 Link: https://github.com/visionmedia/superagent
+                                 
+              *Cloudinary*- to store and manipulate the images
+                                 Link: https://cloudinary.com/
+              
         
         
         
