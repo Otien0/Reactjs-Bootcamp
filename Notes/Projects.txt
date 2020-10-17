@@ -199,7 +199,11 @@
               *Cloudinary*- to store and manipulate the images
                                  Link: https://cloudinary.com/
               
-        
+        Debugging Dropzone issues:
+               https://react-dropzone.js.org/
+               https://github.com/react-dropzone/react-dropzone/issues/727
+               https://react-dropzone.js.org/#!/Basic%20example
+               https://stackoverflow.com/questions/54167823/react-dropzone-issue-children-is-not-a-function
         
         
         
