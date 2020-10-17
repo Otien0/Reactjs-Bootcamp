@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -40,15 +41,39 @@
 .nav-item {
   margin-right: .5rem;
 }
+
 .activeNav {
   color: #555 !important;
   background-color: #e7e7e7 !important;
 }
 
-.home, .submit, .row {
+.home,
+.submit,
+.row {
   padding-top: 8%;
 }
 
 .btn-dark:hover {
   background-color: #007bff;
+}
+
+.row {
+  padding-bottom: 5%;
+  margin-bottom: 10%;
+}
+
+/* Footer */
+footer {
+  background-color: #282c34;
+  font-size: 1rem;
+  height: 80px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  footer {
+    font-size: 1rem;
+  }
 }
