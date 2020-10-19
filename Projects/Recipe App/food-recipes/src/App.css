@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,7 +11,7 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -22,6 +22,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 10%;
 }
 
 .App-link {
@@ -39,7 +40,7 @@
 }
 
 .nav-item {
-  margin-right: .5rem;
+  margin-right: .8rem;
 }
 
 .activeNav {
@@ -51,16 +52,13 @@
 .submit,
 .row {
   padding-top: 8%;
+  padding-bottom: 10%;
 }
 
 .btn-dark:hover {
   background-color: #007bff;
 }
 
-.row {
-  padding-bottom: 5%;
-  margin-bottom: 10%;
-}
 
 /* Footer */
 footer {
