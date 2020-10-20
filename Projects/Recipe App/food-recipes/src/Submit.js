@@ -5,9 +5,9 @@ import request from 'superagent';
 
 import Ingredients from './Ingredients';
 import IngredientList from './IngredientList';
-// import { browserHistory } from 'react-router';
-// import { withRouter } from "react-router";
-// import Footer from './Footer';
+import { browserHistory } from 'react-router';
+import { withRouter } from "react-router";
+import Footer from './Footer';
 
 const CLOUDINARY_UPLOAD_PRESET = 'ceotsrdw';
 const CLOUDINARY_UPLOAD_URL = 'https://api.cloudinary.com/v1_1/https-dev-mourice-herokuapp-com/image/upload';
@@ -156,7 +156,7 @@ class Submit extends Component {
                     </form>
                 </div>
 
-                {/* <Footer /> */}
+                <Footer />
             </div>
         );
     }
