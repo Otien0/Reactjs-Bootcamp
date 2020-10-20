@@ -41,7 +41,8 @@ class Home extends Component {
     render() {
         return (
             <div className="row">
-                <h1>Hello, welcome to my recipe app made with react-js</h1>
+                <h1>Hello welcome to my recipe app made with react-js...</h1>
+                <h1><i>Take a look of displayed recipes sample here:</i></h1>
                 {this.displayRecipies()}
 
                 <div className="footer">
