@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import IngredientList from './IngredientList';
-// import Footer from './Footer';
+import Footer from './Footer';
 
 class Home extends Component {
 
@@ -19,7 +19,7 @@ class Home extends Component {
         // eslint-disable-next-line array-callback-return
         this.state.recipies.map((recipie, i) => {
             resultsArray.push(
-                <div className="col-sm-4 col-md-4">
+                <div className="col-sm-6 col-md-4">
                     <div className="card">
 
                         <div className="card-body">
@@ -44,7 +44,10 @@ class Home extends Component {
                 <h1>Hello, welcome to my recipe app made with react-js</h1>
                 {this.displayRecipies()}
 
-                {/* <Footer /> */}
+                <div className="footer">
+                    <Footer />
+                </div>
+
             </div>
         );
     }
