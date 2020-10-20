@@ -6,7 +6,7 @@ import Home from './Home';
 import Submit from './Submit';
 import { NavLink } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
-import { Router, Route, BrowserRouter } from 'react-router-dom';
+import { Router, Route, BrowserRouter, browserHistory } from 'react-router-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 
 const history = createBrowserHistory();
@@ -23,7 +23,7 @@ ReactDOM.render(
         <div className="collapse navbar-collapse" id="navbarCollapse">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <NavLink exact activeClassName="activeNav" to="/">Home <span className="sr-only">(current)</span></NavLink>
+              <NavLink exact activeClassName="activeNav" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
               <NavLink activeClassName="activeNav" to="/submit">Submit a Recipe</NavLink>
@@ -32,7 +32,7 @@ ReactDOM.render(
         </div>
       </nav>
 
-      <Route path='/' component={Home} />
+      <Route exact path='/' component={Home} />
       <Route path='/submit' component={Submit} history={history} />
 
     </div>
