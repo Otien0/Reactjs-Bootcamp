@@ -205,6 +205,11 @@
                https://react-dropzone.js.org/#!/Basic%20example
                https://stackoverflow.com/questions/54167823/react-dropzone-issue-children-is-not-a-function
         
+        To be Added:
+              Dropdown on the nav,
+              search button on the nav,
+              Improve the UI
+            
         
         
         
