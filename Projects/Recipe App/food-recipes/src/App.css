@@ -69,12 +69,20 @@ h1 {
   margin-top: 1rem;
 }
 
-.btn-dark {
-  margin-bottom: 5%;
-}
+/* 
+.btn-info {
+  margin-left: 1%;
+} */
 
+/* .btn-dark {
+  margin-bottom: 2%;
+} */
 .btn-dark:hover {
   background-color: #007bff;
+}
+
+.form-control {
+  margin: 1%;
 }
 
 
@@ -110,6 +118,14 @@ h1 {
   .row,
   h2 {
     margin-top: 5%;
+  }
+
+  .btn-info {
+    margin-top: 2%;
+  }
+
+  .btn-dark {
+    margin-bottom: 5%;
   }
 
   .footer {
