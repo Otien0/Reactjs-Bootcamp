@@ -227,7 +227,7 @@
                                    >>Description,
                                    >>"More-Info" button, containing both ingredients and Procedure.
               7. Name of the recipe publisher should also be included.
-            
+              8. The More-info button shuold also have a "Add Comments" button for commenting and feedback.
         
         
         
