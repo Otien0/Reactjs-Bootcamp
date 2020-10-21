@@ -206,30 +206,37 @@
                https://stackoverflow.com/questions/54167823/react-dropzone-issue-children-is-not-a-function
         
         To be Added:
-              1. Dropdown on the nav;
+              a. Dropdown on the nav;
                                     https://www.skptricks.com/2018/05/create-dropdown-using-reactjs.html
                                     https://blog.campvanilla.com/reactjs-dropdown-menus-b6e06ae3a8fe
                                     https://blog.logrocket.com/building-a-custom-dropdown-menu-component-for-react-e94f02ced4a1/
                                     https://reactjsexample.com/tag/dropdown/
                                     
-              2. search button on the nav;
+              b. search button on the nav;
                                       https://dev.to/iam_timsmith/lets-build-a-search-bar-in-react-120j
                                     https://levelup.gitconnected.com/building-a-simple-dynamic-search-bar-in-react-js-f1659d64dfae
                     https://stackoverflow.com/questions/42634336/how-to-implement-search-bar-button-and-result-components-in-react
                     https://mdbootstrap.com/docs/react/forms/search/
                     https://codesandbox.io/s/inspiring-monad-h4o92?fontsize=14&module=%2Fsrc%2FMain.js
-              3. Improve the UI
-              4. On the Submit, to add "edit" OR "delete" buttons, on the description.
-              5. Add "Procedure Component" on the Submit and link it to be shown in the "more-info" button on Home Component.
-              6. The Description on the Submit Component, should also be displayed on the Home Component, i.e;
+              c. Improve the UI
+              d. On the Submit, to add "edit" OR "delete" buttons, on the description.
+              e. Add "Procedure Component" on the Submit and link it to be shown in the "more-info" button on Home Component.
+              f. The Description on the Submit Component, should also be displayed on the Home Component, i.e;
                                    >>Name of Recipe,
                                    >>Image,
                                    >>Description,
                                    >>"More-Info" button, containing both ingredients and Procedure.
-              7. Name of the recipe publisher should also be included.
-              8. The More-info button shuold also have a "Add Comments" button for commenting and feedback.
+              g. Name of the recipe publisher should also be included.
+              h. The More-info button shuold also have a "Add Comments" button for commenting and feedback.
         
-        
+8. Simple-Survey APP:
+         mkdir Survey App
+         cd Survey App
+         create-react-app simple-survey
+         cd simple-survey
+         npm start OR sudo npm start OR yarn start
+         
+                      
         
         
 Link to Debugging npm:
