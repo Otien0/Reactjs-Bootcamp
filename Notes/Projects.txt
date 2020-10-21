@@ -219,6 +219,14 @@
                     https://mdbootstrap.com/docs/react/forms/search/
                     https://codesandbox.io/s/inspiring-monad-h4o92?fontsize=14&module=%2Fsrc%2FMain.js
               3. Improve the UI
+              4. On the Submit, to add "edit" OR "delete" buttons, on the description.
+              5. Add "Procedure Component" on the Submit and link it to be shown in the "more-info" button on Home Component.
+              6. The Description on the Submit Component, should also be displayed on the Home Component, i.e;
+                                   >>Name of Recipe,
+                                   >>Image,
+                                   >>Description,
+                                   >>"More-Info" button, containing both ingredients and Procedure.
+              7. Name of the recipe publisher should also be included.
             
         
         
