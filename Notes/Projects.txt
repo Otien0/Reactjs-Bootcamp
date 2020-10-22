@@ -236,6 +236,34 @@
          cd simple-survey
          npm start OR sudo npm start OR yarn start
          
+         Install these two packages;
+                                   a) firebase- >> npm install --save firebase uuid
+                                      link:   https://www.npmjs.com/package/firebase
+                                   
+                                   b) UUID(Unique User ID)
+                                      https://www.npmjs.com/package/uuid
+                                      
+          Set-Up your firebase through this link:
+                                                 https://console.firebase.google.com/    >>then;
+          Create new project- "Your app name", i.e; simple-survey
+          
+          Components: Survey.js
+          Go to firebase console, Database/Rules and modify it(from !=null to ===null) to allow users to interact the data.
+          Again, add firebase to your web app, copy the config{
+                                                              var firebaseConfig = {
+                                                              apiKey: "AIzaSyCcIB4cOQqmHtkmBOt-eRvVB2ukOTHgUEY",
+                                                              authDomain: "simple-survey-ea969.firebaseapp.com",
+                                                              databaseURL: "https://simple-survey-ea969.firebaseio.com",
+                                                              projectId: "simple-survey-ea969",
+                                                              storageBucket: "simple-survey-ea969.appspot.com",
+                                                              messagingSenderId: "506429789472",
+                                                              appId: "1:506429789472:web:76884de2c7ca31b07f3345",
+                                                              measurementId: "G-REJNVNGS3J" 
+                                                              };
+                                                              firebase.initializeApp(firebaseConfig);
+                                                              firebase.analytics();
+           and paste it into your Survey Component App.
+         
                       
         
         
