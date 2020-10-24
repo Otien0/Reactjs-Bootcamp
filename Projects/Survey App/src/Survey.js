@@ -18,7 +18,7 @@ firebase.initializeApp(firebaseConfig);
 firebase.analytics();
 
 class Survey extends Component {
-    
+
     constructor(props) {
         super(props);
 
@@ -36,10 +36,24 @@ class Survey extends Component {
     }
 
     render() {
-        
+        var studentName;
+        var questions;
+
+        if (this.state.studentName === '' && this.state.isSubmitted === false) {
+            studentName = <div>
+                <h1>Hey Student, please let us know your name: </h1>
+
+                <form>
+                    <input type="text" placeholder="Enter your name" ref="name" />
+                </form>
+            </div>
+        }
+
         return (
             <div>
-                <h1>Hello, I am from survey Component</h1>
+                {studentName}
+                --------------------------------
+                {questions}
             </div>
         );
     }
