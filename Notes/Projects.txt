@@ -270,4 +270,4 @@
 Link to Debugging npm:
                      https://stackoverflow.com/questions/47180722/create-react-app-failing-to-create-a-new-react-app-in-windows-10
         
-        
+        BACK FROM BREAK
