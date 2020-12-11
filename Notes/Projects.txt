@@ -239,6 +239,7 @@
          Install these two packages;
                                    a) firebase- >> npm install --save firebase uuid
                                       link:   https://www.npmjs.com/package/firebase
+                                      (Alternatives for firebase => Backendless, Parse)
                                    
                                    b) UUID(Unique User ID)
                                       https://www.npmjs.com/package/uuid
@@ -270,4 +271,4 @@
 Link to Debugging npm:
                      https://stackoverflow.com/questions/47180722/create-react-app-failing-to-create-a-new-react-app-in-windows-10
         
-        BACK FROM BREAK
+        
