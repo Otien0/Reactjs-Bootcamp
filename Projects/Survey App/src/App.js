@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Welcome to React-js Survey App</h1>
+        <h1>Welcome to React Student Survey App</h1>
       </header>
       <Survey />
     </div>
