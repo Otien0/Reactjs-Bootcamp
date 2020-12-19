@@ -26,12 +26,20 @@ class Survey extends Component {
         });
     }
 
+    answerSelected() {
+
+    }
+
+    questionSubmit() {
+
+    }
+
     constructor(props) {
         super(props);
 
         this.state = {
             uid: uuid.v1(),
-            studentName: 'Morris',
+            studentName: '',
             answers: {
                 answer1: '',
                 answer2: '',
@@ -41,6 +49,8 @@ class Survey extends Component {
             isSubmitted: false
         };
         this.nameSubmit = this.nameSubmit.bind(this);
+        this.answerSelected = this.answerSelected.bind(this);
+        this.questionSubmit = this.questionSubmit.bind(this);
     }
 
     render() {
@@ -59,7 +69,33 @@ class Survey extends Component {
         }
         else if (this.state.studentName !== '' && this.state.isSubmitted === false) {
             studentName = <h1>Hello {this.state.studentName}, welcome to Student Survey App</h1>;
-            questions = <p>Hey be ready!</p>;
+            questions = <div>
+                <h2>Hey {this.state.studentName}, here are some questions:</h2>
+                <form onSubmit={this.questionSubmit} >
+                    <div className="card">
+                        <label>What type of courses do you prefer mostly? </label> <br />
+                        <input type="radio" name="answer1" value="Tech/IT" onChange={this.answerSelected} /> Tech/IT
+                        <input type="radio" name="answer1" value="Medicine" onChange={this.answerSelected} /> Medicine
+                        <input type="radio" name="answer1" value="Commerce" onChange={this.answerSelected} /> Commerce
+                    </div>
+
+                    <div className="card">
+                        <label>What are the reasons for your answer above? </label> <br />
+                        <input type="radio" name="answer2" value="Most Paying" onChange={this.answerSelected} /> Most Paying
+                        <input type="radio" name="answer2" value="High Demand" onChange={this.answerSelected} /> High Demand
+                        <input type="radio" name="answer2" value="Easy to Learn" onChange={this.answerSelected} /> Easy to Learn
+                    </div>
+
+                    <div className="card">
+                        <label>After how long does one successfully secure a job with this course? </label> <br />
+                        <input type="radio" name="answer3" value="Immediately" onChange={this.answerSelected} /> Immediately
+                        <input type="radio" name="answer3" value="After a little strugle" onChange={this.answerSelected} /> After a little strugle
+                        <input type="radio" name="answer3" value="It depends on connections" onChange={this.answerSelected} /> It depends on connections
+                    </div>
+
+                    <input className="feedback-button" type="submit" value="submit" />
+                </form>
+            </div>
         }
 
         return (
