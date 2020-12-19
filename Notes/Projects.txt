@@ -249,7 +249,8 @@
           Create new project- "Your app name", i.e; simple-survey
           
           Components: Survey.js
-          Go to firebase console, Database/Rules and modify it(from !=null to ===null) to allow users to interact the data.
+          Go to firebase console, Database/Rules and modify it(from !=null to ===null) to allow users to interact the data.(THIS
+          IS NOT RECOMENDED/NOT A GOOD PRACTISE). 
           Again, add firebase to your web app, copy the config{
                                                               var firebaseConfig = {
                                                               apiKey: "AIzaSyCcIB4cOQqmHtkmBOt-eRvVB2ukOTHgUEY",
