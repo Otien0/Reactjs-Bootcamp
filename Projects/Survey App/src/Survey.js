@@ -19,12 +19,19 @@ firebase.analytics();
 
 class Survey extends Component {
 
+    nameSubmit(event) {
+        var studentName = this.refs.name.value;
+        this.setState({ studentName: studentName }, () => {
+            console.log(this.state);
+        });
+    }
+
     constructor(props) {
         super(props);
 
         this.state = {
             uid: uuid.v1(),
-            studentName: '',
+            studentName: 'Morris',
             answers: {
                 answer1: '',
                 answer2: '',
@@ -33,6 +40,7 @@ class Survey extends Component {
             },
             isSubmitted: false
         };
+        this.nameSubmit = this.nameSubmit.bind(this);
     }
 
     render() {
@@ -43,10 +51,15 @@ class Survey extends Component {
             studentName = <div>
                 <h1>Hey Student, please let us know your name: </h1>
 
-                <form>
-                    <input type="text" placeholder="Enter your name" ref="name" />
+                <form onSubmit={this.nameSubmit}>
+                    <input className="myname" type="text" placeholder="Enter your name" ref="name" />
                 </form>
-            </div>
+            </div>;
+            questions = ''
+        }
+        else if (this.state.studentName !== '' && this.state.isSubmitted === false) {
+            studentName = <h1>Hello {this.state.studentName}, welcome to Student Survey App</h1>;
+            questions = <p>Hey be ready!</p>;
         }
 
         return (
