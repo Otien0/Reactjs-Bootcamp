@@ -26,12 +26,29 @@ class Survey extends Component {
         });
     }
 
-    answerSelected() {
+    answerSelected(event) {
+        var answers = this.state.answers;
+        if (event.target.name === 'answer1') {
+            answers.answer1 = event.target.value;
+        } else if (event.target.name === 'answer2') {
+            answers.answer2 = event.target.value;
+        } else if (event.target.name === 'answer3') {
+            answers.answer3 = event.target.value;
+        }
 
+        this.setState({ answers: answers }, () => {
+            console.log(this.state);
+        });
     }
 
+    // Linking submitted data to firebase
     questionSubmit() {
-
+        firebase.database().ref('sSurvey/' + this.state.uid).set({
+            studentName: this.state.studentName,
+            answers: this.state.answers
+        });
+        // setting submitted data back to true
+        this.setState({ isSubmitted: true });
     }
 
     constructor(props) {
@@ -96,6 +113,9 @@ class Survey extends Component {
                     <input className="feedback-button" type="submit" value="submit" />
                 </form>
             </div>
+        }
+        else if (this.state.studentName !== '' && this.state.isSubmitted === true) {
+            studentName = <h1>Thank you {this.state.studentName}</h1>
         }
 
         return (
