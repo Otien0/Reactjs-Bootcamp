@@ -270,7 +270,16 @@
          then go to "Realtime Database, then create a new database.
          After submitting the data, the new database will be created.
          That's it You're done!
+         TODO: Change some styles in css...submit button, make it lining with the theme.
          
+9. Firebase Login App:
+         mkdir Firebase Login App
+         cd Firebase Login App
+         create-react-app firebase-login
+         cd firebase-login
+         npm start OR sudo npm start OR yarn start
+         
+         This is a simple react.js app for authentication through firebase, with sign-up, login, and logout.
                       
         
         
