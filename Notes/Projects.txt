@@ -266,6 +266,11 @@
                                                               firebase.analytics();
            and paste it into your Survey Component App.
          
+         On Connecting to the database, ensure you modify the rules(Which is not necessarily a good thing to do), 
+         then go to "Realtime Database, then create a new database.
+         After submitting the data, the new database will be created.
+         That's it You're done!
+         
                       
         
         
