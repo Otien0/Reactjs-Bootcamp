@@ -280,9 +280,34 @@
          npm start OR sudo npm start OR yarn start
          
          This is a simple react.js app for authentication through firebase, with sign-up, login, and logout.
-                      
+         
+         Install firebase as a package;
+                                       npm install --save firebase
+                In case of npm installation error, clear your npm cache by the following command:
+                                                              npm cache clean --force
+                                                              then npm i --save firebase-admin
+                Link to solving npm installation issues:
+        https://stackoverflow.com/questions/57937608/facing-error-while-installing-firebase-via-npm-unexpected-end-of-json-input-wh
+        https://dev.to/rishiabee/npm-err-unexpected-end-of-json-input-while-parsing-near-743 
         
+        Now;                                      
+         Set-Up your firebase through this link:
+                                                 https://console.firebase.google.com/    >>then;
+          Create new project- "Your app name", i.e; firebase-login
+          Go to firebase console, Realtime Database, then create new database, next go to Rules and modify
+          it(to "Auth != null, for both read/write) to allow only authorized users to interact the data.
+          Again go to Authentication, then sign-in method, ensure the "email/password" is set to enabled.
         
+
+
+
+
+
+
+
+
+
+       
 Link to Debugging npm:
                      https://stackoverflow.com/questions/47180722/create-react-app-failing-to-create-a-new-react-app-in-windows-10
         
