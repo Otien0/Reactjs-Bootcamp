@@ -3,7 +3,9 @@ import firebase from "@firebase/app";
 import "@firebase/auth";
 import "@firebase/firestore";
 
-// var firebase = require('firebase');
+// var firebase = require('firebase/app');
+//                require('firebase/auth');
+//                require('firebase/database');
 
 var firebaseConfig = {
     apiKey: "AIzaSyA1SfcklO-ZC__OGtHWOIEQk0G-wRlY72E",
@@ -39,6 +41,31 @@ class Authenticate extends Component {
 
     }
 
+    signup() {
+        const email = this.refs.email.value;
+        const password = this.refs.password.value;
+        console.log(email, password);
+
+        const auth = firebase.auth();
+
+        const promise = auth.createUserWithEmailAndPassword(email, password);
+
+        promise.then(user => {
+            var err = "Welcome " + user.email;
+            firebase.database().ref('users/' + user.uid).set({
+                email: user.email
+            });
+            console.log(user);
+            this.setState({ err: err });
+        });
+
+        promise.catch(e => {
+            var err = e.message;
+            console.log(err);
+            this.setState(({ err: err }));
+        });
+    }
+
     constructor(props) {
         super(props);
 
@@ -46,6 +73,7 @@ class Authenticate extends Component {
 
         };
         this.login = this.login.bind(this);
+        this.signup = this.signup.bind(this);
     }
 
     render() {
@@ -57,7 +85,7 @@ class Authenticate extends Component {
                 <p>{this.state.err}</p>
 
                 <button onClick={this.login}>Log In</button>
-                <button>Sign Up</button>
+                <button onClick={this.signup}>Sign Up</button>
                 <button>Log Out</button>
 
 
