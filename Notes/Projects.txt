@@ -297,6 +297,13 @@
           Go to firebase console, Realtime Database, then create new database, next go to Rules and modify
           it(to "Auth != null, for both read/write) to allow only authorized users to interact the data.
           Again go to Authentication, then sign-in method, ensure the "email/password" is set to enabled.
+          
+          Check out on JavaScript, ES6 Promises:
+                                 https://gyen.hashnode.dev/javascript-promises-ck2arq86l00nt3ns1s5xtia35
+                                 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+                                 https://stackoverflow.com/questions/40029867/trying-to-implement-a-simple-promise-in-reactjs
+          
+          NOTE: While removing the entries in the database, make sure to be deleting in the Authentication side too.
         
 
 
