@@ -96,6 +96,40 @@ class Authenticate extends Component {
 
     }
 
+    google() {
+        var provider = new firebase.auth.GoogleAuthProvider();
+
+        firebase.auth()
+            .signInWithPopup(provider)
+            .then((result) => {
+                // /** @type {firebase.auth.OAuthCredential} */
+                var credential = result.credential;
+
+                // This gives you a Google Access Token. You can use it to access the Google API.
+                var token = credential.accessToken;
+
+                // The signed-in user info.
+                var user = result.user;
+                firebase.database().ref('users/' + user.uid).set({
+                    email: user.email,
+                    name: user.displayName
+                });
+
+            }).catch((error) => {
+                // Handle Errors here.
+                // var errorCode = error.code;
+                // var error = error.message;
+                var email = error.email;
+                var error = "The " + email + " of the user's account is used";
+
+
+
+                // The firebase.auth.AuthCredential type that was used.
+                // var credential = error.credential;
+                // ...
+            });
+    }
+
     constructor(props) {
         super(props);
 
@@ -105,6 +139,7 @@ class Authenticate extends Component {
         this.login = this.login.bind(this);
         this.signup = this.signup.bind(this);
         this.logout = this.logout.bind(this);
+        this.google = this.google.bind(this);
     }
 
     render() {
@@ -117,7 +152,9 @@ class Authenticate extends Component {
 
                 <button onClick={this.login}>Log In</button>
                 <button onClick={this.signup}>Sign Up</button>
-                <button onClick={this.logout} id="logout" className="hide">Log Out</button>
+                <button onClick={this.logout} id="logout" className="hide">Log Out</button> <br />
+                <button onClick={this.google} id="google" className="google">Sign In With Google</button>
+
 
 
             </div>
@@ -126,4 +163,3 @@ class Authenticate extends Component {
 }
 
 export default Authenticate;
-
