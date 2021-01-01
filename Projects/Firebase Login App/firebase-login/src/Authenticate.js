@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import firebase from "@firebase/app";
 import "@firebase/auth";
-import "@firebase/firestore";
+import "@firebase/database";
 
+// var firebase = require('firebase/firestore');
 // var firebase = require('firebase/app');
 //                require('firebase/auth');
 //                require('firebase/database');
