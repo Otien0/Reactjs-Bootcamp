@@ -118,7 +118,7 @@ class App extends Component {
                   <a href="https://github.com/mourice-oduor/Node.js" target="_blank" rel="noopener noreferrer">JavaScript- MERN Stack</a>
                 </li>
                 <li class="list-unstyled">
-                  <a href="https://github.com/mourice-oduor/CSharp-ASP.NET-CORE" target="_blank" rel="noopener noreferrer">C#- FullStack Asp.Net <Core></Core></a>
+                  <a href="https://github.com/mourice-oduor/CSharp-ASP.NET-CORE" target="_blank" rel="noopener noreferrer">C#- FullStack Asp.Net_Core</a>
                 </li>
               </p>
             </div>
