@@ -15,8 +15,15 @@
 	"twitterURL": "https://twitter.com/Morys0",
 	"experiences" : [
 		{
+			"title" : "Software Engineer",
+			"period": "2021 Jan - Present",
+			"company": "ExtraInch Technologies",
+			"companyURL": "https://www.extrainch.co.ke/",
+			"details": "I design and develop software in this company, at the same time working as a support engineer in maintaining the existing softwares to our clients."
+		},
+		{
 			"title" : "Freelance Software Developer",
-			"period": "2019 - Present",
+			"period": "2020 - Present",
 			"company": "Self-Employed",
 			"companyURL": "https://dev-mourice.herokuapp.com/",
 			"details": "I design and develop quality softwares, while considering the basic principles, strategies and standards required for a complete software."
@@ -30,6 +37,11 @@
 		}
 	],
 	"projects": [
+		{
+			"name":"AI Chatbots",
+			"url": "https://github.com/mourice-oduor/Alie-Chatbot",
+			"detail": "An AI designed chatbot that acts as a customer care assistant while interacting with clients to a company."
+		},
 		{
 			"name":"Blog-Project(Django)",
 			"url": "https://blogsite-django.herokuapp.com/",
@@ -57,6 +69,10 @@
 		}
 	],
 	"skills": [
+		{
+			"name": "C#- Asp.Net Core",
+			"percent": "80%"
+		},
 		{
 			"name": "Python & Django",
 			"percent": "95%"

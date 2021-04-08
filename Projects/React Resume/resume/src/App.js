@@ -70,8 +70,8 @@ class App extends Component {
 
           <div class="contact-container container-block">
             <ul class="list-unstyled contact-list">
-              <li class="email"><i class="fas fa-envelope"></i><a href="mailto: yourname@email.com">{resume.email}</a></li>
-              <li class="phone"><i class="fas fa-phone"></i><a href="tel:+254 704 489 364">{resume.phone}</a></li>
+              <li class="email"><i class="fas fa-envelope"></i><a href="mailto: yourname@email.com" target="_blank" rel="noopener noreferrer">{resume.email}</a></li>
+              <li class="phone"><i class="fas fa-phone-alt"></i><a href="tel:+254 704 489 364">{resume.phone}</a></li>
               <li class="website"><i class="fas fa-globe"></i><a href={resume.websiteURL} target="_blank" rel="noopener noreferrer">{resume.website}</a></li>
               <li class="website"><i class="fas fa-globe"></i><a href={resume.portfolioURL} target="_blank" rel="noopener noreferrer">{resume.portfolio}</a></li>
               <li class="linkedin"><i class="fab fa-linkedin-in"></i><a href={resume.linkedinURL} target="_blank" rel="noopener noreferrer">{resume.linkedin}</a></li>
@@ -82,7 +82,7 @@ class App extends Component {
 
           <div class="education-container container-block">
             <h2 class="container-block-title">Education</h2>
-            {this.renderEducations()}
+              {this.renderEducations()}
           </div>
 
           <div class="languages-container container-block">
@@ -106,13 +106,19 @@ class App extends Component {
           <section class="section summary-section">
             <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>Career Profile</h2>
             <div class="summary">
-              <p> I am an Applied Mathematics engineer with a degree in BSc Mathematics and ComputerScience, attained at Taita Taveta University. Currently awaiting to graduate late this year in 2020.</p>
+              <p>
+                I am software engineer with a degree in BSc in Mathematics and Computer Science attained at Taita Taveta University,
+                 having specialized in Applied Mathematics option, and currently awaiting to graduate on 6th May this year.
+              </p>
               <p> Majorly, I am a full stack software developer with experiences in:
                 <li class="list-unstyled">
                   <a href="https://github.com/mourice-oduor/Django-Full-Stack" target="_blank" rel="noopener noreferrer">Python- Django</a>
                 </li>
                 <li class="list-unstyled">
                   <a href="https://github.com/mourice-oduor/Node.js" target="_blank" rel="noopener noreferrer">JavaScript- MERN Stack</a>
+                </li>
+                <li class="list-unstyled">
+                  <a href="https://github.com/mourice-oduor/CSharp-ASP.NET-CORE" target="_blank" rel="noopener noreferrer">C#- FullStack Asp.Net <Core></Core></a>
                 </li>
               </p>
             </div>
@@ -130,7 +136,7 @@ class App extends Component {
             <div class="intro">
               <p>Here is a list of my top complete open-source side projects. Some of these projects though complete, are still under maintenance with new updates.</p>
             </div>
-
+            
             {this.renderProjects()}
 
           </section>
@@ -139,6 +145,7 @@ class App extends Component {
             <h2 class="section-title"><span class="icon-holder"><i class="fas fa-rocket"></i></span>Skills &amp; Proficiency</h2>
             <div class="skillset">
               {this.renderSkills()}
+
             </div>
           </section>
 
@@ -146,7 +153,7 @@ class App extends Component {
       </div>
     );
   }
-
+  
 }
 
 export default App;
