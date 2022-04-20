@@ -2,17 +2,18 @@ REACTJS
 
 Install node && npm
 
-install brew/linuxbrew/homebrew:
+1. FOR LINUX USERS:
+	install brew/linuxbrew/homebrew:
           mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
-mkdir Project-1
-cd Project-1
-create-react-app hello-world
-cd hello-world
-npm start OR sudo npm start
+		mkdir Project-1
+		cd Project-1
+		create-react-app hello-world
+		cd hello-world
+		npm start OR sudo npm start
 
-sudo npm install -g create-react-app
+		sudo npm install -g create-react-app
 
-to start your app, go to your folder/dir through terminal, and run:
+	to start your app, go to your folder/dir through terminal, and run:
          npm start  OR yarn start
          
 NOTE:  In case the created react-app, fails to open;
@@ -37,6 +38,21 @@ NOTE:  In case the created react-app, fails to open;
           npm start
        8. Try run this command in your terminal:
            echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+2. FOR WINDOWS USERS:
+		https://www.geeksforgeeks.org/how-to-install-reactjs-on-windows/
+		
+	OR
+		https://reactjs.org/docs/create-a-new-react-app.html#create-react-app
+		https://www.freecodecamp.org/news/install-react-with-create-react-app/
+
+	Open the Terminal and:
+		npm install -g create-react-app   //This will globally install react app for you
+
+			Then create a React Folder,	
+		npx create-react-app my-app
+		cd my-app
+		npm start
 
 A. INDEX  
    common React problems:  https://jscomplete.com/learn/react-beyond-basics/react-cfp
