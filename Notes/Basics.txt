@@ -141,3 +141,15 @@ A. INDEX
              Link to webpack cli;   https://github.com/webpack/webpack-cli
              Add this script-tag to the body;  <script type="text/javascript" src="build/bundle.js"></script>
              then on basic-app dir' open the index.html on the browser
+
+
+
+
+OTHER READS:
+https://dev.to/creativetim_official/15-best-reactjs-project-examples-for-2020-cec?signin=true&utm_campaign=dormosheio&utm_source=dormosheio
+https://jscomplete.com/learn/react-beyond-basics/react-cfp
+https://github.com/ReactTraining/react-router
+https://reactrouter.com/web/guides/quick-start
+https://reactjs.org/docs/forms.html
+https://morioh.com/p/79cd12d339d6
+https://www.codewall.co.uk/best-online-web-tools-for-web-developers-and-programmers/?utm_source=CWTwitter&utm_medium=social
