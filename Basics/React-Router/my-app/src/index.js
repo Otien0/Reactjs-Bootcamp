@@ -7,7 +7,7 @@ import Contact from './Contact';
 import Blog from './Blog';
 import BlogSingle from './BlogSingle';
 import './index.css';
-import { Router, Route, BrowserRouter } from 'react-router-dom'
+import {Route, BrowserRouter } from 'react-router-dom'
 
 ReactDOM.render(
   <BrowserRouter>
