@@ -103,13 +103,16 @@ A. INDEX
 		https://www.javatpoint.com/react-forms
 		https://react-hook-form.com/
 		
-   n)React Router
+   n)React Router:
+			https://reactrouter.com/
+
         Github Link: https://github.com/ReactTraining/react-router
         Doccumentation: https://reactrouter.com/
         React-Dom for Web Tutorial : https://reactrouter.com/web/guides/quick-start
         
         Installing React Router globall:
-                                          npm install -g --save react-router
+			https://reactrouter.com/docs/en/v6/getting-started/installation
+                                          npm install -g react-router
         Installing React Dom for web-app:
                   First, Follow these basic steps like before;
                          mkdir React-Router
@@ -119,6 +122,7 @@ A. INDEX
                                                                  npm install --save react-router
                                                                  npm install react-router-dom
                          npm start OR sudo npm start
+
          Link to Version 4 of REACT-Router;  
          https://github.com/ReactTraining/react-router/blob/25776d4dc89b8fb2f575884749766355992116b5/packages/react-router/docs/guides/migrating.md#nesting-routes
          
@@ -131,7 +135,7 @@ A. INDEX
                         npm i -S react-dom
                         npm i -D webpack
                         npm i -D babel-core
-                        npm i -D babel-loader >>These two convert the rect code into ES6 version to be understood by Browser
+                        npm i -D babel-loader >>These two convert the react code into ES6 version to be understood by Browser
                         npm i -D babel-preset-react
                         npm i -D babel-preset-es2015
                         
