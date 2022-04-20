@@ -1,5 +1,8 @@
 REACTJS
 
+==>> REACT DEVELOPER ROADMAP/PATHS TO COVER:
+					https://roadmap.sh/react
+
 Install node && npm
 
 1. FOR LINUX USERS:
@@ -53,6 +56,9 @@ NOTE:  In case the created react-app, fails to open;
 		npx create-react-app my-app
 		cd my-app
 		npm start
+
+==>> REACT DEVELOPER ROADMAP/PATHS TO COVER:
+					https://roadmap.sh/react
 
 A. INDEX  
    common React problems:  https://jscomplete.com/learn/react-beyond-basics/react-cfp
