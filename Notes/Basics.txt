@@ -63,20 +63,25 @@ NOTE:  In case the created react-app, fails to open;
 A. INDEX  
    common React problems:  https://jscomplete.com/learn/react-beyond-basics/react-cfp
 
-1. REACT BASICS:         
+1. REACT BASICS:
+		https://reactjs.org/docs/hello-world.html       
            
    a)Project-1 hello world
-   b)JSX Syntax
+
+   b)JSX Syntax   //// https://reactjs.org/docs/introducing-jsx.html
+
    c)Project-2: components-basics
    d)constructors
    e)components and states
    f)Rendering
    g)Props
    h)props validation/types
+
    i)project3- props-state
              Link to prop errors/deprecation:  https://reactjs.org/docs/typechecking-with-proptypes.html
              https://reactjs.org/blog/2017/09/26/react-v16.0.html
              https://reactjs.org/docs/react-component.html#render
+
    j)Components-API
    k)Components lIFE CYCLE:
              Methods Include:
@@ -91,14 +96,20 @@ A. INDEX
                     
                     
    l)Project-4: Components Life Cycle
-   m)Forms in Reactjs
+
+   m)Forms in Reactjs:
+		https://reactjs.org/docs/forms.html
+		https://www.digitalocean.com/community/tutorials/how-to-build-forms-in-react
+		https://www.javatpoint.com/react-forms
+		https://react-hook-form.com/
+		
    n)React Router
         Github Link: https://github.com/ReactTraining/react-router
         Doccumentation: https://reactrouter.com/
         React-Dom for Web Tutorial : https://reactrouter.com/web/guides/quick-start
         
         Installing React Router globall:
-                                          npm install --save react-router
+                                          npm install -g --save react-router
         Installing React Dom for web-app:
                   First, Follow these basic steps like before;
                          mkdir React-Router
