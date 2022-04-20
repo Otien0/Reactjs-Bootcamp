@@ -1,2 +1,5 @@
 # Reactjs-Bootcamp
-projects in reactjs
+  Basic Beginer projects in reactjs to Advanced.
+
+# REACT DEVELOPER ROADMAP/PATH:
+#                        https://roadmap.sh/react
