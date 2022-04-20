@@ -105,6 +105,9 @@ export default function App() {
           <li>
             <Link to="/topics">Topics</Link>
           </li>
+          <li>
+            <Link to="/Blog">Blogs</Link>
+          </li>
         </ul>
 
         <Switch>
@@ -123,7 +126,7 @@ export default function App() {
   );
 }
 
-function Home() {
+const Home = ()=> {
   return <h2>Home</h2>;
 }
 
