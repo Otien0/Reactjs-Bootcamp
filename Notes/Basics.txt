@@ -1,4 +1,4 @@
-REACTJS
+REACT-JS
 
 ==>> REACT DEVELOPER ROADMAP/PATHS TO COVER:
 					https://roadmap.sh/react
