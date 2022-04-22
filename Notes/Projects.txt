@@ -119,8 +119,8 @@
                    
                    
 7. Food Recipes App:
-           //https://www.allrecipes.com/
-          // https://www.allrecipes.com/recipes/83/everyday-cooking/convenience-cooking/
+           		https://www.allrecipes.com/
+          		https://www.allrecipes.com/recipes/83/everyday-cooking/convenience-cooking/
         mkdir Recipe
         cd Recipe
         create-react-app food-recipe
@@ -213,7 +213,7 @@
                                     https://reactjsexample.com/tag/dropdown/
                                     
               b. search button on the nav;
-                                      https://dev.to/iam_timsmith/lets-build-a-search-bar-in-react-120j
+                                    https://dev.to/iam_timsmith/lets-build-a-search-bar-in-react-120j
                                     https://levelup.gitconnected.com/building-a-simple-dynamic-search-bar-in-react-js-f1659d64dfae
                     https://stackoverflow.com/questions/42634336/how-to-implement-search-bar-button-and-result-components-in-react
                     https://mdbootstrap.com/docs/react/forms/search/
