@@ -1,0 +1,6 @@
+1. Error Boundaries
+			https://reactjs.org/docs/error-boundaries.html
+			https://www.digitalocean.com/community/tutorials/react-error-boundaries
+			https://github.com/bvaughn/react-error-boundary
+			https://www.javatpoint.com/react-error-boundaries
+
