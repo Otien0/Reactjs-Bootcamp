@@ -4,3 +4,19 @@
 			https://github.com/bvaughn/react-error-boundary
 			https://www.javatpoint.com/react-error-boundaries
 
+
+
+2. React Hooks:
+		https://reactjs.org/docs/hooks-intro.html
+		https://www.javatpoint.com/react-hooks
+		https://www.freecodecamp.org/news/introduction-to-react-hooks/
+		https://www.smashingmagazine.com/2020/04/react-hooks-api-guide/
+		https://www.freecodecamp.org/news/how-to-create-react-hooks/
+
+3. Redux:
+		https://react-redux.js.org/
+		https://redux.js.org/tutorials/fundamentals/part-5-ui-react
+		https://www.npmjs.com/package/react-redux
+		https://www.freecodecamp.org/news/how-to-use-redux-in-reactjs-with-real-life-examples-687ab4441b85/
+		https://www.javatpoint.com/react-redux
+		https://github.com/creativetimofficial/react-redux-tutorial
