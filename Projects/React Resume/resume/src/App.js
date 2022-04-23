@@ -65,7 +65,7 @@ class App extends Component {
           <div class="profile-container">
             <img className="profile" src={resume.image} alt="Dispaly-pic" />
             <h1 className="name">{resume.name}</h1>
-            <h3 className="tagline">Full Stack Developer</h3>
+            <h3 className="tagline">Software Engineer</h3>
           </div>
 
           <div class="contact-container container-block">
@@ -107,20 +107,21 @@ class App extends Component {
             <h2 class="section-title"><span class="icon-holder"><i class="fas fa-user"></i></span>Career Profile</h2>
             <div class="summary">
               <p>
-                I am software engineer with a degree in BSc in Mathematics and Computer Science attained at Taita Taveta University,
-                 having specialized in Applied Mathematics option, and currently awaiting to graduate on 6th May this year.
+                A passionate software engineer who constantly seeks out innovative solutions to everyday problems with experience in strategic IT roles in the <strong>Payments</strong>,  
+                <strong>Banking</strong>, <strong>Software Development</strong>, and <strong>Integrations</strong> industry. I genuinely enjoy working with clients to provide insightful and honest strategic recommendations based on their business goals.
               </p>
-              <p> Majorly, I am a full stack software developer with experiences in:
-                <li class="list-unstyled">
-                  <a href="https://github.com/mourice-oduor/Django-Full-Stack" target="_blank" rel="noopener noreferrer">Python- Django</a>
-                </li>
-                <li class="list-unstyled">
-                  <a href="https://github.com/mourice-oduor/Node.js" target="_blank" rel="noopener noreferrer">JavaScript- MERN Stack</a>
-                </li>
-                <li class="list-unstyled">
-                  <a href="https://github.com/mourice-oduor/CSharp-ASP.NET-CORE" target="_blank" rel="noopener noreferrer">C#- FullStack Asp.Net_Core</a>
-                </li>
+
+              <p> 
+                Driven by my ability in developing quality software, I've honed my analytical thinking and collaboration skills,
+                and I love working with a team throughout my 3 years in this industry. I've also had the opportunity to serve as the software engineer coordinator and lead several projects with first technology.
               </p>
+
+              <p>
+                I am confident and I pride myself on being an excellent collaborator with the ability to develop any application from desktop app to
+                software and web applications. I am currently seeking an opportunity to join a fast-paced software development company that will
+                benefit from my strong tech stacks and efficient software development skills.
+              </p>
+
             </div>
           </section>
 
