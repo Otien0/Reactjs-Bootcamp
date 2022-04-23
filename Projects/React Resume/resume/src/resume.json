@@ -19,14 +19,18 @@
 			"period": "2021 Jan - Present",
 			"company": "ExtraInch Technologies",
 			"companyURL": "https://www.extrainch.co.ke/",
-			"details": "I design and develop software in this company, at the same time working as a support engineer in maintaining the existing softwares to our clients."
+			"details": "As a software engineer at ExtraInch Technologies, I was involved in the following projects or tasks: ",
+			"details2": "Bantu Core Banking System: The goal of this program is to automate all retail and corporate banking processes with best of breed functional modules and a full complement of state-of-art features. I was tasked to ensure that functional and technical inputs met the desired goal of the product offering through support and maintenance to the existing clients.",
+			"details3": "Software Development: whose goal is to develop software and web-app portals to be used by new and existing clients of the company. Also develop and integrate APIs to the existing or new software applications.",
+			"details4": "Project Implementation: whose goal is to conduct system implementation of the core banking software to new clients. Initiate the product fitment process to meet the client’s business review requirements and operations, train users and perform data migrations into the system."
 		},
 		{
 			"title" : "Freelance Software Developer",
 			"period": "2020 - Present",
 			"company": "Self-Employed",
 			"companyURL": "https://dev-mourice.herokuapp.com/",
-			"details": "I design and develop quality softwares, while considering the basic principles, strategies and standards required for a complete software."
+			"details": "I design and develop quality softwares, while considering the basic principles, strategies and standards required for a complete software.",
+			"details2": "Ecommerce Site: I developed a real-time shopping Cart Website with both MERN and Django Stacks. These online business projects displayed products where users can add and remove products to/from their cart while also specifying the quantity of each item."
 		},
 		{
 			"title" : "Freelance Web Developer",
@@ -38,9 +42,14 @@
 	],
 	"projects": [
 		{
-			"name":"AI Chatbots",
-			"url": "https://github.com/mourice-oduor/Alie-Chatbot",
-			"detail": "An AI designed chatbot that acts as a customer care assistant while interacting with clients to a company."
+			"name":"Campgrounds-App",
+			"url": "https://campgrounds-ke.herokuapp.com/",
+			"detail": "This is a campground rating app, where users can create their own campgrounds, view and comment on others' campgrounds. This is a small project in RESTful routing with Nodejs. It uses the following technologies : Node.js, Express.js, Passport.js, jQuery and MongoDB."
+		},
+		{
+			"name":"Photography Site",
+			"url": "https://kenarts-photography.herokuapp.com/",
+			"detail": "A static photography website for one of my clients."
 		},
 		{
 			"name":"Blog-Project(Django)",
@@ -53,32 +62,23 @@
 			"detail": "Simple ReactJS blog site theme built through Start-Bootstrap Template."
 		},
 		{
-			"name":"Yelp-Camp",
-			"url": "https://github.com/mourice-oduor/Node.js/tree/master/YelpCamp_4",
-			"detail": "This is a campground rating app, where users can create their own campgrounds, view and comment on others' campgrounds. This is a small project in RESTful routing with Nodejs. It uses the following technologies : Node.js, Express.js, Passport.js, jQuery and MongoDB."
-		},
-		{
 			"name":"Simple-Social Media Site(Django)",
 			"url": "https://simplesocial-django.herokuapp.com/",
 			"detail": "A simple social media network clone-site project built with Django, with some similar features such as other social network platforms."
 		},
 		{
-			"name":"Horizon-Detector(Open CV)",
-			"url": "https://github.com/mourice-oduor/Sky-Ground_Horizon_Detector",
-			"detail": "A Python Script that implements the technique of Sky Region Detection in multiple input_images, using an application of a computer vision-based horizon detector(OpenCV)."
+			"name":"AI Chatbots",
+			"url": "https://github.com/mourice-oduor/Alie-Chatbot",
+			"detail": "An AI designed chatbot that acts as a customer care assistant while interacting with clients to a company."
 		}
 	],
 	"skills": [
 		{
-			"name": "C#- Asp.Net Core",
-			"percent": "80%"
+			"name": "HTML5 & CSS",
+			"percent": "90%"
 		},
 		{
-			"name": "Python & Django",
-			"percent": "95%"
-		},
-		{
-			"name": "Javascript & jQuery",
+			"name": "Javascript(ES6 && ES7)",
 			"percent": "90%"
 		},
 		{
@@ -86,16 +86,20 @@
 			"percent": "80%"
 		},
 		{
-			"name": "HTML5 & CSS",
+			"name": "MERN Stack",
 			"percent": "90%"
 		},
 		{
-			"name": "MERN Stack",
+			"name": "C#-Asp.Net Core",
 			"percent": "80%"
 		},
 		{
-			"name": "Graphic Design",
-			"percent": "55%"
+			"name": "Back-end Development(SQL, API, Integrations)",
+			"percent": "85%"
+		},
+		{
+			"name": "Python & Django",
+			"percent": "75%"
 		}
 	],
 	"education": [
