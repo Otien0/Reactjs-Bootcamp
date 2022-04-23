@@ -17,6 +17,10 @@ class Experience extends Component {
                 </div>
                 <div className="details">
                     <p>{this.props.item.details}</p>
+                    <p>{this.props.item.details2}</p>
+                    <p>{this.props.item.details3}</p>
+                    <p>{this.props.item.details4}</p>
+                    
                 </div>
             </div>
 		);
