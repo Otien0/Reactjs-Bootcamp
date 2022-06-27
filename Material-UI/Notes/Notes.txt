@@ -8,3 +8,6 @@ Front-End Side:
 			cd muidemo and start.
 			npm install react-router-dom --save
 			npm install dotenv --save
+
+
+			npm install @mui/icons-material
