@@ -3,12 +3,15 @@ import './App.css';
 // import Home from "./pages/Home";
 import Tour from "./pages/Tour";
 import { Container, Grid } from '@mui/material';
+import SearchAppBar from './components/AppBar';
 // import SearchAppBar from "./components/AppBar";
 
 function App() {
   return (
     <div className='App'>
-      <Container>
+      <SearchAppBar />
+
+      <Container sx={{ marginY: 5 }}>
         <Grid container spacing={5}>
           <Tour/>
           <Tour/>
