@@ -3,14 +3,14 @@ import TextField from '@mui/material/TextField';
 import { LocalizationProvider } from '@mui/x-date-pickers-pro';
 import { AdapterDateFns } from '@mui/x-date-pickers-pro/AdapterDateFns';
 import Box from '@mui/material/Box';
-import StaticDatePicker from "@mui/lab";
+import StaticDateRangePicker from "@mui/lab";
 
 export default function StaticDateRangePickerDemo() {
   const [value, setValue] = React.useState([null, null]);
 
   return (
     <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <StaticDatePicker
+      <StaticDateRangePicker
         displayStaticWrapperAs="desktop"
         value={value}
         onChange={(newValue) => {
