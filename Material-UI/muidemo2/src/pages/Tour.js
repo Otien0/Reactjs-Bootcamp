@@ -1,88 +1,57 @@
-import {
-  Grid,
-  Paper,
-  Typography,
-  Box,
-  Rating,
-  createTheme,
-  ThemeProvider,
-} from "@mui/material";
-import { AccessTime } from "@mui/icons-material";
+import { Container, Typography } from "@mui/material";
+import { Box } from "@mui/system";
 import React from "react";
+import ControlledAccordions from "../components/Accordian";
+import QuiltedImageList from "../components/ImageLists";
+import { BottomNavigation, Paper } from "@mui/material";
+import BasicModal from "../components/Modal";
 
-const theme = createTheme({
-  components: {
-    MuiTypography: {
-      variants: [
-        {
-          props: {
-            variant: "body2",
-          },
-          style: {
-            fontSize: 11,
-          },
-        },
-        {
-          props: {
-            variant: "body3",
-          },
-          style: {
-            fontSize: 9,
-          },
-        },
-      ],
-    },
-  },
-});
-
-function Tour() {
+export default function Tour() {
+  const [value, setValue] = React.useState(0);
   return (
-    <Grid item xs={3}>
-      <ThemeProvider theme={theme}>
-        <Paper elevation={3}>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-SjqyEHcmxbthFv6UvrLyQCzyBB0xegH0eA&usqp=CAU"
-            alt=""
-            className="img"
-          />
-
-          <Box paddingX={1}>
-            <Typography variant="subtitle1" component="h2">
-              The beauty of Earth
-            </Typography>
-
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <AccessTime sx={{ width: 12.5 }} />
-              <Typography variant="body2" component="p" marginLeft={0.5}>
-                5 hours
-              </Typography>
-            </Box>
-
-            <Box sx={{ display: "flex", alignItems: "center" }} marginTop={2}>
-              <Rating
-                name="read-only"
-                value={4.5}
-                readOnly
-                precision={0.5}
-                size="small"
-              />
-              <Typography variant="body2" component="p" marginLeft={0.5}>
-                4.5
-              </Typography>
-              <Typography variant="body2" component="p" marginLeft={1.5}>
-                (655 reviews)
-              </Typography>
-            </Box>
-            <Box>
-              <Typography variant="h6" component="h3" marginTop={0}>
-                From USD $100
-              </Typography>
-            </Box>
-          </Box>
-        </Paper>
-      </ThemeProvider>
-    </Grid>
+    <Container sx={{ width: 900 }}>
+      <Typography variant="h3" component="h1" marginTop={3}>
+        Immerse into the Falls
+      </Typography>
+      <Box marginTop={3} sx={{ display: "flex" }}>
+        <img
+          src="https://media.timeout.com/images/105124791/750/422/image.jpg" alt="Tourimage"
+          height={325}
+        />
+        <QuiltedImageList />
+      </Box>
+      <Typography variant="h6" component="h4" marginTop={3}>
+        About this ticket
+      </Typography>
+      <Box sx={{ display: "flex" }}>
+        <Typography variant="paragraph" component="p" marginY={3}>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+          voluptates rem quos delectus debitis earum modi, ipsum veritatis.
+          Perferendis officiis nobis, aut hic praesentium nulla vero, possimus
+          omnis reprehenderit blanditiis quis incidunt minima voluptatibus illum
+          quam corporis libero fugiat doloremque. Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Exercitationem officiis commodi beatae
+          animi incidunt necessitatibus aut provident ad ex. Saepe!
+        </Typography>
+      </Box>
+      <Typography variant="h6" component="h4" marginBottom={3}>
+        Frequently Asked Questions
+      </Typography>
+      <ControlledAccordions />
+      <Paper
+        sx={{ position: "fixed", bottom: 0, left: 0, right: 0 }}
+        elevation={3}
+      >
+        <BottomNavigation
+          showLabels
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        >
+          <BasicModal />
+        </BottomNavigation>
+      </Paper>
+    </Container>
   );
 }
-
-export default Tour;
